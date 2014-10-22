@@ -38,7 +38,7 @@ function hood_river_setup() {
 	 *
 	 * @link http://codex.wordpress.org/Function_Reference/add_theme_support#Post_Thumbnails
 	 */
-	//add_theme_support( 'post-thumbnails' );
+	add_theme_support( 'post-thumbnails' );
 
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(
@@ -103,6 +103,41 @@ function hood_river_scripts() {
 	}
 }
 add_action( 'wp_enqueue_scripts', 'hood_river_scripts' );
+
+
+/**
+ * Masonry
+ */
+
+if (! function_exists('slug_scripts_masonry') ) :
+if ( ! is_admin() ) :
+function slug_scripts_masonry() {
+    wp_enqueue_script('masonry');
+    // wp_enqueue_style('masonry', get_template_directory_uri().'/css/');
+}
+add_action( 'wp_enqueue_scripts', 'slug_scripts_masonry' );
+endif; //! is_admin()
+endif; //! slug_scripts_masonry exists
+
+if ( ! function_exists( 'slug_masonry_init' )) :
+function slug_masonry_init() { ?>
+    <script>
+        //set the container that Masonry will be inside of in a var
+        var container = document.querySelector('#masonry-loop');
+        //create empty var msnry
+        var msnry;
+        // initialize Masonry after all images have loaded
+        imagesLoaded( container, function() {
+            msnry = new Masonry( container, {
+                    itemSelector: '.masonry-entry'
+        });
+        });
+    </script>
+<?php }
+//add to wp_footer
+add_action( 'wp_header', 'slug_masonry_init' );
+endif; // ! slug_masonry_init exists
+
 
 /**
  * Implement the Custom Header feature.
