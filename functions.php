@@ -119,7 +119,7 @@ add_action( 'wp_enqueue_scripts', 'slug_scripts_masonry' );
 endif; //! is_admin()
 endif; //! slug_scripts_masonry exists
 
-if ( ! function_exists( 'slug_masonry_init' )) :
+/* if ( ! function_exists( 'slug_masonry_init' )) :
 function slug_masonry_init() { ?>
     <script>
         //set the container that Masonry will be inside of in a var
@@ -136,7 +136,7 @@ function slug_masonry_init() { ?>
 <?php }
 //add to wp_footer
 add_action( 'wp_header', 'slug_masonry_init' );
-endif; // ! slug_masonry_init exists
+endif; // ! slug_masonry_init exists */
 
 
 /**

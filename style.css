@@ -640,9 +640,11 @@ a:active {
 
 /* MASONRY STYLE */
 .masonry-entry{
-    float: left;
+    width: 33%;
     padding: 0;
     margin: 0;
+}
+.masonry-entry img {
 }
 /*--------------------------------------------------------------
 10.1 Posts and pages

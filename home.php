@@ -12,7 +12,7 @@ get_header(); ?>
         <main id="main" class="site-main" role="main">
 
             <?php if ( have_posts() ) : ?>
-
+            <div id="masonry-loop">
                 <?php /* Start the Loop */ ?>
                 <?php while ( have_posts() ) : the_post(); ?>
 
@@ -26,6 +26,7 @@ get_header(); ?>
 
                 <?php endwhile; ?>
 
+            </div><!-- masonry loop -->
                 <?php hood_river_paging_nav(); ?>
 
             <?php else : ?>
