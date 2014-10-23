@@ -9,10 +9,26 @@ get_header(); ?>
     <!-- home  -->
 
     <div id="primary" class="content-area">
+        <div class="featured-one">
+            <img src="<?php echo get_template_directory_uri(); ?>/imgs/main-featured-fpo.jpg">
+        </div>
         <main id="main" class="site-main" role="main">
-
-            <?php if ( have_posts() ) : ?>
             <div id="masonry-loop">
+                            <article class="masonry-entry featured-two" id="post-f2">
+                                <h1>this is masonry</h1>
+                                    <div class="masonry-thumbnail">
+                                        <a href=""> <img  class="attachment-masonry-thumb wp-post-image" src="<?php echo get_template_directory_uri(); ?>/imgs/second-featured-fpo.jpg"></a>
+                                    </div><!--.masonry-thumbnail-->
+                                <div class="masonry-details">
+                                    <h5><a href="#" title=""><span class="masonry-post-title">This is just a test title</span></a></h5>
+                                    <div class="masonry-post-excerpt">
+                                        <?//php the_excerpt(); ?>
+                                    </div><!--.masonry-post-excerpt-->
+                                </div><!--/.masonry-entry-details -->
+                            </article><!--/.masonry-entry-->
+
+
+                <?php if ( have_posts() ) : ?>
                 <?php /* Start the Loop */ ?>
                 <?php while ( have_posts() ) : the_post(); ?>
 

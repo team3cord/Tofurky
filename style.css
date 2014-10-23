@@ -427,14 +427,52 @@ a:active {
 	color: midnightblue;
 }
 
+/* =============================================================
+STICKY HEADER
+==============================================================*/
+header{
+    position: fixed;
+    width: 100%;
+    font-size: 40px;
+    line-height: 108px;
+    height: 108px;
+    /* background: #81c41b;*/
+    background: rgba(129,196,27,0.9);
+    color: #fff;
+    font-family: 'PT Sans', sans-serif;
+    z-index: 1;
+
+// set animation
+-webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+
+header.sticky {
+    font-size: 30px;
+    line-height: 48px;
+    height: 48px;
+    text-align: left;
+    padding-left: 20px;
+}
+.site-title a {
+    color: #ffffff;
+    text-decoration: none;
+    padding-left: 50px;
+}
+
 /*--------------------------------------------------------------
 5.2 Menus
 --------------------------------------------------------------*/
+.site-branding {
+    clear: both;
+    float: left;
+    width: 30%;
+}
 .main-navigation {
-	clear: both;
 	display: block;
-	float: left;
-	width: 100%;
+	float: right;
+	width: 50%;
+    font-size: 20px;
 }
 
 .main-navigation ul {
@@ -450,7 +488,12 @@ a:active {
 
 .main-navigation a {
 	display: block;
+    color: #ffffff;
+    padding-left: 35px ;
+    padding-right: 35px;
 	text-decoration: none;
+    text-transform: lowercase;
+    border-left: 1px dotted #404040;
 }
 
 .main-navigation ul ul {
@@ -644,8 +687,11 @@ a:active {
     padding: 0;
     margin: 0;
 }
-.masonry-entry img {
-}
+/*.masonry-entry.featured-two {
+    width: 60%;
+    display: block;
+}*/
+
 /*--------------------------------------------------------------
 10.1 Posts and pages
 --------------------------------------------------------------*/
