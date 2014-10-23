@@ -8,6 +8,7 @@
 get_header(); ?>
 
 <!-- single -->
+    <div class="sticky-buffer"></div>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 

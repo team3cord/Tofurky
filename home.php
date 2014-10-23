@@ -8,9 +8,9 @@ get_header(); ?>
 
     <!-- home  -->
 
-    <div id="primary" class="content-area">
+    <div id="home-primary" class="content-area">
         <div class="featured-one">
-            <img src="<?php echo get_template_directory_uri(); ?>/imgs/main-featured-fpo.jpg">
+            <a href="<?php echo get_permalink(16); ?>"> <img src="<?php echo get_template_directory_uri(); ?>/imgs/main-featured-fpo.jpg"></a>
         </div>
         <main id="main" class="site-main" role="main">
             <div id="masonry-loop">

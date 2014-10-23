@@ -1,7 +1,7 @@
 <?php get_header();?>
 <!-- cat events -->
 
-<div id="primary" class="content-area">
+<div id="cat-primary" class="content-area">
     <div class="featured-one">
         <img src="<?php echo get_template_directory_uri(); ?>/imgs/main-featured-fpo.jpg">
     </div>

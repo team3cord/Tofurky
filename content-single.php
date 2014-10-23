@@ -10,7 +10,8 @@
 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 
 		<div class="entry-meta">
-			<?php hood_river_posted_on(); ?>
+            <span> share this icons @ # $ % %</span>
+			<//?php hood_river_posted_on(); ?>
 		</div><!-- .entry-meta -->
 	</header><!-- .entry-header -->
 
