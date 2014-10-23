@@ -430,7 +430,7 @@ a:active {
 /* =============================================================
 STICKY HEADER
 ==============================================================*/
-header{
+header.site-header{
     position: fixed;
     width: 100%;
     font-size: 40px;
@@ -447,7 +447,7 @@ header{
     transition: all 0.4s ease;
 }
 
-header.sticky {
+header.site-header.sticky {
     font-size: 30px;
     line-height: 48px;
     height: 48px;
