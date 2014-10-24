@@ -11,11 +11,19 @@
 	</div><!-- #content -->
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
-		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'http://wordpress.org/', 'hood-river' ) ); ?>"><?php printf( __( 'Proudly powered by %s', 'hood-river' ), 'WordPress' ); ?></a>
-			<span class="sep"> | </span>
-			<?php printf( __( 'Theme: %1$s by %2$s.', 'hood-river' ), 'Hood River', '<a href="http://subtledigital.com" rel="designer">Subtle Digital</a>' ); ?>
-		</div><!-- .site-info -->
+        <span class="footer-label"><?php echo get_field('footer_label',5); ?></span>
+        <div class="footer-contact"> <?php echo get_field('footer_contact_form',5); ?></div>
+        <span class="footer-privacy"><?php echo get_field('footer_privacy',5); ?></span>
+        <div class="footer-social">
+            <ul>
+                <li><a class="pin-wt" href="http://www.pinterest.com/tofurky/"></a></li>
+                <li><a class="inst-wt" href="http://instagram.com/tofurky"></a></li>
+                <li><a class="fb-wt" href="https://www.facebook.com/TofurkyFan"></a></li>
+                <li><a class="twt-wt" href="https://twitter.com/@tofurky"></a></li>
+                <li><a class="rss-wt" href="#"></a></li>
+            </ul>
+        </div>
+
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 

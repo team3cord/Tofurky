@@ -413,7 +413,7 @@ textarea {
 /*--------------------------------------------------------------
 5.1 Links
 --------------------------------------------------------------*/
-a {
+/*a {
 	color: royalblue;
 }
 
@@ -426,18 +426,21 @@ a:focus,
 a:active {
 	color: midnightblue;
 }
-
+*/
 /* =============================================================
 STICKY HEADER
 ==============================================================*/
 header.site-header{
     position: fixed;
     width: 100%;
-    font-size: 40px;
+    font-size: 0px;
     line-height: 108px;
     height: 108px;
     /* background: #81c41b;*/
     background: rgba(129,196,27,0.9);
+    background-image: url("imgs/large-logo.png");
+    background-repeat: no-repeat;
+    background-position: 50px 1px;
     color: #fff;
     font-family: 'PT Sans', sans-serif;
     z-index: 1;
@@ -448,17 +451,93 @@ header.site-header{
 }
 
 header.site-header.sticky {
-    font-size: 30px;
+    font-size: 0px;
     line-height: 48px;
     height: 48px;
     text-align: left;
     padding-left: 20px;
+    background-image: url("imgs/small-logo.png");
+    background-repeat: no-repeat;
+    background-position: 50px -5px;
 }
 .site-title a {
     color: #ffffff;
     text-decoration: none;
     padding-left: 50px;
 }
+
+
+/* =============================================================
+FOOTER
+==============================================================*/
+
+footer.site-footer{
+    float: left;
+    width: 100%;
+    padding: 0 35px;
+    min-height: 60px;
+    background-color: #4e4c4c;
+}
+footer.site-footer p {
+    margin: 0;
+    padding: 0;
+}
+.footer-label {
+    display: inline-block;
+    float: left;
+    padding: 16px 25px 0 0;
+    font-size: 22px;
+    color: #ffffff;
+}
+.footer-contact {
+    float: left;
+    padding: 10px;
+}
+
+.footer-contact input[type='email'] {
+    width: 303px;
+    height: 40px;
+    padding: 6px 0 0 20px;
+    border: none;
+    border-radius: 5px;
+    color: #4e4c4c;
+}
+.footer-privacy {
+    display: inline-block;
+    float: left;
+    padding: 21px 0 0 25px;
+    color: #8d8b8b;
+}
+.footer-social {
+    float: right;
+}
+.footer-social ul {
+    margin: 0;
+    padding: 0;
+}
+.footer-social ul li {
+    display: inline-block;
+    float: left;
+    text-decoration: none;
+
+}
+.footer-social ul li a {
+    float: left;
+    text-decoration: none;
+    height: 60px;
+    width: 40px;
+    background-image: url("imgs/social-wt.png");
+    background-repeat: no-repeat;
+    color: #ffffff;
+}
+.pin-wt{background-position: 4px 24px }
+.inst-wt{background-position: -32px 24px}
+.fb-wt{background-position: -66px 24px}
+.twt-wt{background-position: -103px 24px}
+.rss-wt{background-position: -140px 24px}
+
+
+
 
 /*--------------------------------------------------------------
 5.2 Menus
@@ -472,7 +551,6 @@ header.site-header.sticky {
 	display: block;
 	float: right;
 	width: 50%;
-    font-size: 20px;
 }
 
 .main-navigation ul {
@@ -491,9 +569,31 @@ header.site-header.sticky {
     color: #ffffff;
     padding-left: 35px ;
     padding-right: 35px;
+    font-size: 15px;
+    font-style: italic;
 	text-decoration: none;
     text-transform: lowercase;
-    border-left: 1px dotted #404040;
+    border-left: 1px dotted #aaaaaa;
+}
+#menu-item-11 a {
+    background-image: url("imgs/reci-icon.png");
+    background-repeat: no-repeat;
+    background-position: 34px -9px;
+}
+#menu-item-10 a {
+    background-image: url("imgs/life-icon.png");
+    background-repeat: no-repeat;
+    background-position: 34px -6px;
+}
+#menu-item-12 a {
+    background-image: url("imgs/sus-icon.png");
+    background-repeat: no-repeat;
+    background-position: 50px -9px;
+}
+#menu-item-14 a {
+    background-image: url("imgs/events-icon.png");
+    background-repeat: no-repeat;
+    background-position: 29px -8px;
 }
 
 .main-navigation ul ul {
@@ -539,7 +639,20 @@ header.site-header.sticky {
 .main-navigation .current-menu-item > a,
 .main-navigation .current_page_ancestor > a {
 }
+.search-box-btn {
+    float: right;
 
+}
+.search-box-btn a {
+    display: block;
+    content: "";
+    min-height: 108px;
+    min-width: 108px;
+    background: rgba(88, 145, 2, 0.4);
+    background-image: url("imgs/search-icon.png");
+    background-repeat: no-repeat;
+    background-position: 27px -3px;
+}
 /* Small menu */
 .menu-toggle {
 	display: none;
@@ -683,14 +796,83 @@ header.site-header.sticky {
 
 /* MASONRY STYLE */
 .masonry-entry{
-    width: 33%;
-    padding: 0;
+    width: 33.3%;
+    padding: 12px 12px 30px 12px;
     margin: 0;
+    border-top: 1px dotted #aaaaaa;
+    border-right: 1px dotted #aaaaaa;
+    /* order-width: 5px;
+        -webkit-border-image: url("imgs/border-dots.png")5 5 5 5 repeat stretch;
+        -moz-border-image: url("imgs/border-dots.png")5 5 5 5 repeat stretch;
+        border-image: url("imgs/border-dots.png")5 5 5 5 repeat stretch; */
 }
+
 /*.masonry-entry.featured-two {
     width: 60%;
     display: block;
 }*/
+.masonry-details h5{
+    font-size: 24px;
+    margin-bottom: 25px;
+}
+.masonry-details a {
+    text-decoration: none;
+    color: #403e3e;
+}
+.comment-num {
+    display: inline-block;
+    padding: 3px 15px 10px 33px;
+    background-image: url("imgs/icon-com.png");
+    background-repeat: no-repeat;
+    background-position: 1px 1px;
+    color: #bbbbbb;
+}
+.tag-list {
+    display: inline-block;
+    padding: 3px 15px 10px 33px;
+    background-image: url("imgs/icon-tag.png");
+    background-repeat: no-repeat;
+    background-position: 1px 1px;
+    color: #bbbbbb;
+}
+.tag-list a {
+    color: #bbbbbb;
+}
+
+/*--------------------------------------------------------------
+HOME PAGE
+--------------------------------------------------------------*/
+
+.featured-one {
+    position: relative;
+    display: block;
+    width: 100%;
+    min-height: 737px;
+}
+.featured-one img {
+    display: block;
+    float: left;
+}
+.featured-callout {
+    position: absolute;
+    top: 16%;
+    left: 10%;
+}
+.featured-callout span {
+    font-size: 140px;
+    text-shadow:  -7px -3px 12px rgba(133,133,135, 0.5),-7px -3px 12px rgba(133,133,135, 0.5);
+}
+.featured-title {
+    position: absolute;
+    top: 46%;
+    left: 10%;
+    width: 32%;
+}
+.featured-title span {
+    color: #73be02;
+    font-size: 34px;
+}
+
 
 /*--------------------------------------------------------------
 10.1 Posts and pages

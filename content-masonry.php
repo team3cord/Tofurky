@@ -1,6 +1,5 @@
 <!-- content masonry -->
 <article class="masonry-entry" id="post-<?php the_ID(); ?>" <?php post_class(); ?> >
-    <h1>this is masonry</h1>
     <?php if ( has_post_thumbnail() ) : ?>
         <div class="masonry-thumbnail">
             <a href="<?php the_permalink(' ') ?>" title="<?php the_title(); ?>"><?php the_post_thumbnail('masonry-thumb'); ?></a>
@@ -8,6 +7,8 @@
     <?php endif; ?>
     <div class="masonry-details">
         <h5><a href="<?php the_permalink(' ') ?>" title="<?php the_title(); ?>"><span class="masonry-post-title"> <?php the_title(); ?></span></a></h5>
+        <span class="comment-num"><?php echo comments_number(); ?></span>
+        <span class="tag-list"><?php echo get_the_tag_list(' ',', ',' '); ?></span>
         <!-- <div class="masonry-post-excerpt">
             <//?php the_excerpt(); ?>
         </div><!--.masonry-post-excerpt-->
