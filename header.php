@@ -23,11 +23,15 @@
 	<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'hood-river' ); ?></a>
 
 	<header id="masthead" class="site-header" role="banner">
-		<div class="site-branding">
-			<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-		</div>
+		<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
+            <div class="site-branding">
+                <h1 class="site-title"><?php bloginfo( 'name' ); ?></h1>
+            </div>
+        </a>
 
 		<nav id="site-navigation" class="main-navigation" role="navigation">
+
+            <span class="filter-text">filtered by:</span>
 			<button class="menu-toggle"><?php _e( 'Primary Menu', 'hood-river' ); ?></button>
 			<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
             <div class="search-box-mc"></div>

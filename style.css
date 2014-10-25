@@ -430,10 +430,35 @@ a:active {
 /* =============================================================
 STICKY HEADER
 ==============================================================*/
+.site-title  {
+    font-size: 0px;
+    text-decoration: none;
+}
+.filter-text {
+    display: none;
+}
+.search-box-btn {
+    float: right;
+
+}
+.search-box-btn a {
+    display: block;
+    content: "";
+    min-height: 108px;
+    min-width: 110px;
+    background-image: url("imgs/big-search.png");
+    background-repeat: no-repeat;
+
+// set animation
+-webkit-transition: background-image 0.2s ease-in-out;
+    -moz-transition: background-image 0.2s ease-in-out;
+    -ms-transition: background-image 0.2s ease-in-out;
+    -o-transition: background-image 0.2s ease-in-out;
+    transition: background-image 0.1s ease-in-out;
+}
 header.site-header{
     position: fixed;
     width: 100%;
-    font-size: 0px;
     line-height: 108px;
     height: 108px;
     /* background: #81c41b;*/
@@ -451,7 +476,6 @@ header.site-header{
 }
 
 header.site-header.sticky {
-    font-size: 0px;
     line-height: 48px;
     height: 48px;
     text-align: left;
@@ -460,11 +484,46 @@ header.site-header.sticky {
     background-repeat: no-repeat;
     background-position: 50px -5px;
 }
-.site-title a {
-    color: #ffffff;
-    text-decoration: none;
-    padding-left: 50px;
+
+header.site-header.sticky nav.main-navigation {
+    width: 40.3%;
 }
+header.site-header.sticky nav.main-navigation a{
+    font-size: 0;
+    background-repeat: no-repeat;
+}
+header.site-header.sticky #menu-item-11 a {
+    background-image: url("imgs/small-icon-sprite.png");
+    background-position: -5px -5px;
+    width: 112px;
+}
+header.site-header.sticky #menu-item-10 a {
+    background-image: url("imgs/small-icon-sprite.png");
+    background-position: -136px -6px;
+    width: 112px;
+}
+header.site-header.sticky #menu-item-12 a {
+    background-image: url("imgs/small-icon-sprite.png");
+    background-position: -296px -7px;
+    width: 112px;
+}
+header.site-header.sticky #menu-item-14 a {
+    background-image: url("imgs/small-icon-sprite.png");
+    background-position: -442px -7px;
+    width: 112px;
+}
+header.site-header.sticky .search-box-btn a {
+    background-image: url("imgs/small-search.png");
+    min-width: 112px;
+    min-height: 48px;
+    padding: 0;
+}
+/*header.site-header.sticky span.filter-text {
+    display: inline-block;
+    float: left;
+    padding-right: 15px;
+}*/
+
 
 
 /* =============================================================
@@ -550,7 +609,7 @@ footer.site-footer p {
 .main-navigation {
 	display: block;
 	float: right;
-	width: 50%;
+	width: 42.3%;
 }
 
 .main-navigation ul {
@@ -639,20 +698,7 @@ footer.site-footer p {
 .main-navigation .current-menu-item > a,
 .main-navigation .current_page_ancestor > a {
 }
-.search-box-btn {
-    float: right;
 
-}
-.search-box-btn a {
-    display: block;
-    content: "";
-    min-height: 108px;
-    min-width: 108px;
-    background: rgba(88, 145, 2, 0.4);
-    background-image: url("imgs/search-icon.png");
-    background-repeat: no-repeat;
-    background-position: 27px -3px;
-}
 /* Small menu */
 .menu-toggle {
 	display: none;
