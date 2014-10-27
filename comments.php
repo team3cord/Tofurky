@@ -22,6 +22,8 @@ if ( post_password_required() ) {
 <div id="comments" class="comments-area">
 
 	<?php // You can start editing here -- including this comment! ?>
+    <span class="comment-num"><?php echo comments_number(); ?></span><br>
+    	<?php comment_form(); ?>
 
 	<?php if ( have_comments() ) : ?>
 		<h2 class="comments-title">
@@ -65,6 +67,6 @@ if ( post_password_required() ) {
 		<p class="no-comments"><?php _e( 'Comments are closed.', 'hood-river' ); ?></p>
 	<?php endif; ?>
 
-	<?php comment_form(); ?>
+
 
 </div><!-- #comments -->

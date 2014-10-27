@@ -24,6 +24,7 @@ get_header(); ?>
             <div id="masonry-loop">
                             <article class="masonry-entry featured-two" id="post-f2">
                                     <div class="masonry-thumbnail">
+                                        <div class="post-cat-icon <?php get_category('name'); ?>"></div>
                                         <a href=""> <img  class="attachment-masonry-thumb wp-post-image" src="<?php echo get_template_directory_uri(); ?>/imgs/second-featured-fpo.jpg"></a>
                                     </div><!--.masonry-thumbnail-->
                                 <div class="masonry-details">

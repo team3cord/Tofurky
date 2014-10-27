@@ -16,10 +16,10 @@
         <span class="footer-privacy"><?php echo get_field('footer_privacy',5); ?></span>
         <div class="footer-social">
             <ul>
-                <li><a class="pin-wt" href="http://www.pinterest.com/tofurky/"></a></li>
-                <li><a class="inst-wt" href="http://instagram.com/tofurky"></a></li>
-                <li><a class="fb-wt" href="https://www.facebook.com/TofurkyFan"></a></li>
-                <li><a class="twt-wt" href="https://twitter.com/@tofurky"></a></li>
+                <li><a class="pin-wt" href="http://www.pinterest.com/tofurky/" target="_blank"></a></li>
+                <li><a class="inst-wt" href="http://instagram.com/tofurky" target="_blank"></a></li>
+                <li><a class="fb-wt" href="https://www.facebook.com/TofurkyFan" target="_blank"></a></li>
+                <li><a class="twt-wt" href="https://twitter.com/@tofurky" target="_blank"></a></li>
                 <li><a class="rss-wt" href="#"></a></li>
             </ul>
         </div>

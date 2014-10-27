@@ -48,5 +48,6 @@ jQuery(function($){
             e.preventDefault();
             $('.search-box-mc').addClass('display-search');
         });
+        $('.entry-content-single img').parent('p').addClass('full-image');
     })
 });

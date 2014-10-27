@@ -912,14 +912,43 @@ footer.site-footer p {
         -moz-border-image: url("imgs/border-dots.png")5 5 5 5 repeat stretch;
         border-image: url("imgs/border-dots.png")5 5 5 5 repeat stretch; */
 }
+.masonry-thumbnail {
+    position: relative;
+}
+.post-cat-icon {
+    position: absolute;
+    top: 17px;
+    left: -12px;
+    height: 56px;
+    width: 56px;
+    background-repeat: no-repeat;
+}
+.post-cat-icon.Recipes {
 
+    background-image: url("imgs/recipes-circle.png");
+    background-position: -5px -3px;
+}
+
+.post-cat-icon.Sustainability {
+    background-image: url("imgs/sus1-circle.png");
+    background-position: -5px -8px;
+}
+.post-cat-icon.Lifestyle {
+    background-image: url("imgs/lifestyle-circle.png");
+    background-position: -4px -4px;
+}
+.post-cat-icon.Events{
+    background-image: url("imgs/events-circle.png");
+    background-position: -6px -10px;
+}
 /*.masonry-entry.featured-two {
     width: 60%;
     display: block;
 }*/
-.masonry-details h5{
+.masonry-post-title {
     font-size: 24px;
     margin-bottom: 25px;
+    color: #585757;
 }
 .masonry-details a {
     text-decoration: none;
@@ -1004,6 +1033,7 @@ HOME PAGE
 .page-content,
 .entry-content,
 .entry-summary {
+    position: relative;
 	margin: 1.5em 0 0;
 }
 
@@ -1020,10 +1050,11 @@ HOME PAGE
 #primary {
     float: left;
     width: 66%;
+    border-right: 1px dotted #aaaaaa;
 }
 #secondary {
     float: left;
-    width: 33%;
+    width: 33.9%;
     padding-top: 125px;
 }
 .entry-header {
@@ -1036,6 +1067,72 @@ HOME PAGE
     color: #73be02;
 
 }
+.entry-content-single {
+    display: block;
+    float: left;
+    position: relative;
+}
+.entry-content-single .no-break {
+    display: inline-block;
+    padding: 0 0 0 36px;
+
+}
+.entry-content-single p {
+    padding: 5px 40px;
+    font-size: 17px;
+    margin: 0;
+    color: #585757;
+}
+p.full-image {
+    float: left;
+    padding: 0;
+    width: 100%;
+}
+.entry-content-single img {
+    display: block;
+    float: left;
+    padding: 10px;
+    border-top: 1px dotted #aaaaaa;
+    border-right: 1px dotted #aaaaaa;
+    border-bottom: 1px dotted #aaaaaa;
+}
+.before-image {
+    position: absolute;
+    top: 94px;
+    left: 2px;
+    height: 56px;
+    width: 56px;
+    background-repeat: no-repeat;
+}
+.before-image.Recipes {
+   background-image: url("imgs/recipes-circle.png");
+    background-position: -5px -3px;
+}
+.before-image.Sustainability {
+    background-image: url("imgs/sus1-circle.png");
+    background-position: -5px -8px;
+
+}
+.before-image .Lifestyle {
+    background-image: url("imgs/lifestyle-circle.png");
+    background-position: -4px -4px;
+
+}
+.before-image .Events {
+    background-image: url("imgs/events-circle.png");
+    background-position: -6px -10px;
+
+}
+.entry-footer {
+    display: block;
+    float: left;
+    padding: 30px;
+}
+.comments-area {
+    display: block;
+    float: left;
+    padding: 30px;
+}
 
 /*--------------------------------------------------------------
 10.2 Asides
@@ -1044,7 +1141,105 @@ HOME PAGE
 .archive .format-aside .entry-title {
 	display: none;
 }
+.widget_text {
+    padding: 0 30px;
+}
+#secondary h1 {
+    font-size: 32px;
+    color: #73be02;
+}
 
+.widget_text p {
+    font-size: 15px;
+    color: #4e4c4c;
+}
+.social-feed a {
+    color: #73be02;
+}
+.side-email {
+    padding: 30px 30px 40px 30px;
+    margin-bottom: 60px;
+}
+.side-email input[type='email']{
+     height: 40px;
+     width: 301px;
+    margin-top: 5px;
+     padding: 10px 0 0 20px;
+     font-size: 14px;
+    font-weight: bold;
+     border: 1px solid #aaaaaa;
+     border-radius: 10px;
+     color: #ffffff;
+ }
+
+.side-email input[type='email']::-webkit-input-placeholder {
+    color: rgba(78,76,76,0.9);
+}
+
+.side-email  input[type='email']:-moz-placeholder { /* Firefox 18- */
+    color: rgba(78,76,76,0.9);
+}
+
+.side-email input[type='email']::-moz-placeholder {  /* Firefox 19+ */
+    color: rgba(78,76,76,0.9);
+}
+
+.side-email  input[type='email']:-ms-input-placeholder {
+    color: rgba(78,76,76,0.9);
+}
+.side-email span {
+    font-size: 22px;
+    font-style: italic;
+}
+.side-email ul {
+    margin: 0;
+    padding: 0;
+}
+.side-email li {
+    display: inline-block;
+    float: left;
+    text-decoration: none;
+}
+.side-email li a {
+    float: left;
+    text-decoration: none;
+    height: 60px;
+    width: 40px;
+    background-image: url("imgs/sidebar-social-sprite.png");
+    background-repeat: no-repeat;
+}
+.side-pin a {background-position: 1px 1px}
+.side-inst a {background-position: -37px 1px}
+.side-fb a {background-position: -73px 1px}
+.side-twt a {background-position: -109px 1px}
+.side-rss a {background-position: -147px 1px}
+
+.side-recent-post {
+    padding-bottom: 20px;
+}
+.side-recent-post img {
+    padding: 10px;
+    border-top: 1px dotted #aaaaaa;
+}
+
+.side-recent-post a {
+    text-decoration: none;
+    color: #403e3e;
+}
+
+.side-recent-post h5 {
+    font-size: 22px;
+    padding: 0 30px 15px 30px;
+}
+
+.side-recent-post .comment-num {
+    margin-left: 30px;
+}
+
+.side-recent-post .tag-list a {
+    color: #bbbbbb;
+
+}
 /*--------------------------------------------------------------
 10.3 Comments
 --------------------------------------------------------------*/
