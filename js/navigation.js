@@ -44,7 +44,8 @@ jQuery(function($){
                 $('.search-box-btn').removeClass('search-icon-sm');
             }
         });
-        $('#mc-search').on('click', function(){
+        $('#mc-search').on('click', function(e){
+            e.preventDefault();
             $('.search-box-mc').addClass('display-search');
         });
     })

@@ -544,6 +544,9 @@ header.site-header.sticky .search-box-btn a {
     height:108px;
     background: #ff00ff;
     z-index: 2;
+// set animation
+-webkit-transition: all 1.0s ease;
+    transition: all 1.0s ease;
 }
 .display-search {
     display: block;
