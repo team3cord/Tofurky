@@ -37,10 +37,15 @@ jQuery(function($){
         $(window).scroll(function() {
             if ($(this).scrollTop() > 1){
                 $('header.site-header').addClass("sticky");
+                $('.search-box-btn').addClass('search-icon-sm');
             }
             else{
                 $('header.site-header').removeClass("sticky");
+                $('.search-box-btn').removeClass('search-icon-sm');
             }
+        });
+        $('#mc-search').on('click', function(){
+            $('.search-box-mc').addClass('display-search');
         });
     })
 });

@@ -34,7 +34,7 @@
             <span class="filter-text">filtered by:</span>
 			<button class="menu-toggle"><?php _e( 'Primary Menu', 'hood-river' ); ?></button>
 			<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
-            <div class="search-box-mc"></div>
+            <div class="search-box-mc"><?php get_search_form('searchform'); ?></div>
                 <div class="search-box-btn"><a id="mc-search" href="#"></a></div>
 
 		</nav><!-- #site-navigation -->

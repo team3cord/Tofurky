@@ -438,23 +438,37 @@ STICKY HEADER
     display: none;
 }
 .search-box-btn {
-    float: right;
-
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 108px;
+    height: 108px;
+    background-image: url("imgs/big-search.png");
+    background-repeat: no-repeat;
+    background-position: 0 -5px;
+// set animation
+-webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+.search-icon-sm {
+    background-image:url("imgs/small-search.png");
+    width: 112px;
+    height: 48px;
 }
 .search-box-btn a {
     display: block;
     content: "";
-    min-height: 108px;
-    min-width: 110px;
-    background-image: url("imgs/big-search.png");
-    background-repeat: no-repeat;
+    padding: 54px;
+    border-left: none!important;
+
+
 
 // set animation
--webkit-transition: background-image 0.2s ease-in-out;
+/*-webkit-transition: background-image 0.2s ease-in-out;
     -moz-transition: background-image 0.2s ease-in-out;
     -ms-transition: background-image 0.2s ease-in-out;
     -o-transition: background-image 0.2s ease-in-out;
-    transition: background-image 0.1s ease-in-out;
+    transition: background-image 0.1s ease-in-out;*/
 }
 header.site-header{
     position: fixed;
@@ -513,10 +527,7 @@ header.site-header.sticky #menu-item-14 a {
     width: 112px;
 }
 header.site-header.sticky .search-box-btn a {
-    background-image: url("imgs/small-search.png");
-    min-width: 112px;
-    min-height: 48px;
-    padding: 0;
+    padding: 24px 56px;
 }
 /*header.site-header.sticky span.filter-text {
     display: inline-block;
@@ -524,8 +535,53 @@ header.site-header.sticky .search-box-btn a {
     padding-right: 15px;
 }*/
 
+.search-box-mc {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 609px;
+    height:108px;
+    background: #ff00ff;
+    z-index: 2;
+}
+.display-search {
+    display: block;
+}
+.search-box-mc input[type='text']{
+    position: absolute;
+    top:0;
+    right: 111px;
+    height: 108px;
+    width: 501px;
+    padding-left: 85px;
+    background-color: #589102;
+    font-size: 24px;
+    border: none;
+    border-radius: 0;
+    color: #ffffff;
+    border-right: 1px dotted #aaaaaa;
+}
+.search-box-mc input[type='image']{
+   position: absolute;
+    top: -6px;
+    right: 0;
+}
+.search-box-mc input[type='text']::-webkit-input-placeholder {
+    color: rgba(129,196,27,0.9);
+}
 
+.search-box-mc input[type='text']:-moz-placeholder { /* Firefox 18- */
+    color: rgba(129,196,27,0.9);
+}
 
+.search-box-mc input[type='text']::-moz-placeholder {  /* Firefox 19+ */
+    color: rgba(129,196,27,0.9);
+}
+
+.search-box-mc input[type='text']:-ms-input-placeholder {
+    color: rgba(129,196,27,0.9);
+}
 /* =============================================================
 FOOTER
 ==============================================================*/
@@ -634,6 +690,7 @@ footer.site-footer p {
     text-transform: lowercase;
     border-left: 1px dotted #aaaaaa;
 }
+
 #menu-item-11 a {
     background-image: url("imgs/reci-icon.png");
     background-repeat: no-repeat;

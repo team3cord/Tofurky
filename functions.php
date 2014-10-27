@@ -66,6 +66,7 @@ function hood_river_setup() {
 		'default-color' => 'ffffff',
 		'default-image' => '',
 	) ) );
+    add_theme_support( 'html5', array( 'search-form' ) );
 }
 endif; // hood_river_setup
 add_action( 'after_setup_theme', 'hood_river_setup' );
