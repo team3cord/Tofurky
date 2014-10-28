@@ -9,44 +9,12 @@ get_header(); ?>
     <!-- home  -->
 
     <div id="home-primary" class="content-area">
-        <div class="featured-one">
-            <a href="<?php echo get_field('main_featured_link', 5); ?>">
-                <img src="<?php echo get_field('main_featured_image',5);?>">
+
+        <main id="main" class="site-main" role="main">
+            <div id="masonry-loop">
                 <div class="featured-callout">
                     <span><?php echo get_field('main_featured_callout', 5); ?></span>
                 </div>
-                <div class="featured-title">
-                    <span><?php echo get_field('main_featured_post_title', 5); ?></span>
-                </div>
-            </a>
-        </div>
-        <div class="featured-two">
-            <a href="<?php echo get_field('two_featured_link', 5); ?>">
-                <img src="<?php echo get_field('two_featured_image',5);?>">
-                <div class="featured-callout">
-                    <span><?php echo get_field('two_featured_callout', 5); ?></span>
-                </div>
-                <div class="featured-title">
-                    <span><?php echo get_field('two_featured_post_title', 5); ?></span>
-                </div>
-            </a>
-        </div>
-        <div class="featured-three">
-            <a href="<?php echo get_field('three_featured_link', 5); ?>">
-                <img src="<?php echo get_field('three_featured_image',5);?>">
-                <div class="featured-callout">
-                    <span><?php echo get_field('three_featured_callout', 5); ?></span>
-                </div>
-                <div class="featured-title">
-                    <span><?php echo get_field('three_featured_post_title', 5); ?></span>
-                </div>
-            </a>
-        </div>
-        <div class="clear-mc"></div>
-        <main id="main" class="site-main" role="main">
-            <div id="masonry-loop">
-
-
 
                 <?php if ( have_posts() ) : ?>
                 <?php /* Start the Loop */ ?>

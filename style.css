@@ -482,7 +482,7 @@ header.site-header{
     background-position: 50px 1px;
     color: #fff;
     font-family: 'PT Sans', sans-serif;
-    z-index: 1;
+    z-index: 2;
 
 // set animation
 -webkit-transition: all 0.4s ease;
@@ -900,10 +900,19 @@ footer.site-footer p {
 10.0 Content
 --------------------------------------------------------------*/
 
+
+/*--------------------------------------------------------------
+HOME PAGE
+--------------------------------------------------------------*/
+
+#masonry-loop {
+    width: 1500px;
+    margin: 0 auto;
+}
+
 /* MASONRY STYLE */
-#masonry-
 .masonry-entry{
-    width: 33.3%;
+    width: 500px;
     padding: 7px 7px 30px 7px;
     margin: 0;
     border-top: 1px dotted #aaaaaa;
@@ -913,6 +922,34 @@ footer.site-footer p {
         -moz-border-image: url("imgs/border-dots.png")5 5 5 5 repeat stretch;
         border-image: url("imgs/border-dots.png")5 5 5 5 repeat stretch; */
 }
+.featured-one article.masonry-entry {width: 1500px;padding: 0;border-top: 0;border-right: 0;}
+.featured-two article.masonry-entry {width: 1000px;}
+
+.featured-one div.post-cat-icon {
+    display: none;
+}
+.featured-callout {
+    position: absolute;
+    top: 220px;
+    left: 160px;
+    z-index: 1;
+}
+.featured-callout span {
+    font-size: 140px;
+    text-shadow:  -7px -3px 12px rgba(133,133,135, 0.5),-7px -3px 12px rgba(133,133,135, 0.5);
+}
+.featured-one div.masonry-details {
+    position: absolute;
+    top: 460px;
+    left: 160px;
+    width: 32%;
+    z-index: 1;
+}
+.featured-one div.masonry-details h5 span {
+    color: #73be02;
+    font-size: 34px;
+}
+
 .masonry-entry img {
     width: 100%;
 }
@@ -979,63 +1016,44 @@ footer.site-footer p {
     color: #bbbbbb;
 }
 
-/*--------------------------------------------------------------
-HOME PAGE
---------------------------------------------------------------*/
 
-.featured-one {
-    position: relative;
-    display: block;
-    width: 100%;
-    min-height: 737px;
-
-}
-.featured-one img {
-    display: block;
-    float: left;
-    width: 100%;
-}
-.featured-callout {
-    position: absolute;
-    top: 16%;
-    left: 10%;
-}
-.featured-callout span {
-    font-size: 140px;
-    text-shadow:  -7px -3px 12px rgba(133,133,135, 0.5),-7px -3px 12px rgba(133,133,135, 0.5);
-}
-.featured-title {
-    position: absolute;
-    top: 46%;
-    left: 10%;
-    width: 32%;
-}
-.featured-title span {
-    color: #73be02;
-    font-size: 34px;
-}
-.featured-two {
-    position: relative;
-    display: block;
-    float: left;
-    width: 66%;
-    min-height: 100px;
-    background: #ff00ff;
-    margin-bottom: 300px;
-}
-.featured-three {
-    position: relative;
-    display: block;
-    float: left;
-    width: 33%;
-    min-height: 100px;
-    background: #00ff00;
-
-}
-.clear-mc {
-
+/*Media Queries*/
+@media only screen and (max-width : 1440px),
+only screen and (max-device-width : 1440px){
+    #masonry-loop{width: 1440px;}
+    .featured-one article.masonry-entry {width: 1440px}
+    .featured-two article.masonry-entry {width: 960px}
+    .masonry-entry {width:480px;}
 }
 
+
+@media only screen and (max-width : 999px),
+only screen and (max-device-width : 999px){
+    #masonry-loop{
+        width: 800px;
+    }
+}
+
+@media only screen and (max-width : 799px),
+only screen and (max-device-width : 799px){
+    #masonry-loop{
+        width: 600px;
+    }
+}
+
+@media only screen and (max-width : 599px),
+only screen and (max-device-width : 599px){
+    #masonry-loop{
+        width: 400px;
+    }
+}
+
+@media only screen and (max-width : 399px),
+only screen and (max-device-width : 399px){
+    #masonry-loop{
+        width: 200px;
+    }
+}
 
 /*--------------------------------------------------------------
 10.1 Posts and pages
@@ -1045,7 +1063,7 @@ HOME PAGE
 }
 
 .hentry {
-	margin: 0 0 1.5em;
+	margin: 0;
 }
 
 .byline,

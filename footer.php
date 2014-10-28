@@ -38,10 +38,16 @@
     // initialize Masonry after all images have loaded
     imagesLoaded( container, function() {
         msnry = new Masonry( container, {
-
+            columnWidth: 500,
             itemSelector: '.masonry-entry'
         });
     });
+            function featuredImage(feature){
+                $(feature).eq(0).addClass('featured-one');
+                $(feature).eq(1).addClass('featured-two');
+                $(feature).eq(2).addClass('featured-three');
+            }
+            featuredImage('.sticky');
         })
 });
 </script>
