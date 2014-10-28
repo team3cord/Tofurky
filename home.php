@@ -20,20 +20,32 @@ get_header(); ?>
                 </div>
             </a>
         </div>
+        <div class="featured-two">
+            <a href="<?php echo get_field('two_featured_link', 5); ?>">
+                <img src="<?php echo get_field('two_featured_image',5);?>">
+                <div class="featured-callout">
+                    <span><?php echo get_field('two_featured_callout', 5); ?></span>
+                </div>
+                <div class="featured-title">
+                    <span><?php echo get_field('two_featured_post_title', 5); ?></span>
+                </div>
+            </a>
+        </div>
+        <div class="featured-three">
+            <a href="<?php echo get_field('three_featured_link', 5); ?>">
+                <img src="<?php echo get_field('three_featured_image',5);?>">
+                <div class="featured-callout">
+                    <span><?php echo get_field('three_featured_callout', 5); ?></span>
+                </div>
+                <div class="featured-title">
+                    <span><?php echo get_field('three_featured_post_title', 5); ?></span>
+                </div>
+            </a>
+        </div>
+        <div class="clear-mc"></div>
         <main id="main" class="site-main" role="main">
             <div id="masonry-loop">
-                            <article class="masonry-entry featured-two" id="post-f2">
-                                    <div class="masonry-thumbnail">
-                                        <div class="post-cat-icon <?php get_category('name'); ?>"></div>
-                                        <a href=""> <img  class="attachment-masonry-thumb wp-post-image" src="<?php echo get_template_directory_uri(); ?>/imgs/second-featured-fpo.jpg"></a>
-                                    </div><!--.masonry-thumbnail-->
-                                <div class="masonry-details">
-                                    <h5><a href="#" title=""><span class="masonry-post-title">This is just a test title</span></a></h5>
-                                    <div class="masonry-post-excerpt">
-                                        <?//php the_excerpt(); ?>
-                                    </div><!--.masonry-post-excerpt-->
-                                </div><!--/.masonry-entry-details -->
-                            </article><!--/.masonry-entry-->
+
 
 
                 <?php if ( have_posts() ) : ?>

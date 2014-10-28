@@ -901,9 +901,10 @@ footer.site-footer p {
 --------------------------------------------------------------*/
 
 /* MASONRY STYLE */
+#masonry-
 .masonry-entry{
     width: 33.3%;
-    padding: 12px 12px 30px 12px;
+    padding: 7px 7px 30px 7px;
     margin: 0;
     border-top: 1px dotted #aaaaaa;
     border-right: 1px dotted #aaaaaa;
@@ -912,6 +913,10 @@ footer.site-footer p {
         -moz-border-image: url("imgs/border-dots.png")5 5 5 5 repeat stretch;
         border-image: url("imgs/border-dots.png")5 5 5 5 repeat stretch; */
 }
+.masonry-entry img {
+    width: 100%;
+}
+
 .masonry-thumbnail {
     position: relative;
 }
@@ -983,10 +988,12 @@ HOME PAGE
     display: block;
     width: 100%;
     min-height: 737px;
+
 }
 .featured-one img {
     display: block;
     float: left;
+    width: 100%;
 }
 .featured-callout {
     position: absolute;
@@ -1006,6 +1013,27 @@ HOME PAGE
 .featured-title span {
     color: #73be02;
     font-size: 34px;
+}
+.featured-two {
+    position: relative;
+    display: block;
+    float: left;
+    width: 66%;
+    min-height: 100px;
+    background: #ff00ff;
+    margin-bottom: 300px;
+}
+.featured-three {
+    position: relative;
+    display: block;
+    float: left;
+    width: 33%;
+    min-height: 100px;
+    background: #00ff00;
+
+}
+.clear-mc {
+
 }
 
 
@@ -1218,6 +1246,7 @@ p.full-image {
     padding-bottom: 20px;
 }
 .side-recent-post img {
+    width: 100%;
     padding: 10px;
     border-top: 1px dotted #aaaaaa;
 }
