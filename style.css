@@ -905,15 +905,24 @@ footer.site-footer p {
 HOME PAGE
 --------------------------------------------------------------*/
 
-#masonry-loop {
-    width: 1500px;
-    margin: 0 auto;
+.grid-sizer  {
+    width:33%;
+}
+.item {
+    display: block;
+    float: left;
+    width: 33%;
+}
+/* clear fix */
+.isotope:after {
+    content: '';
+    display: block;
+    clear: both;
 }
 
 /* MASONRY STYLE */
-.masonry-entry{
-    width: 500px;
-    padding: 7px 7px 30px 7px;
+/*.masonry-entry{
+    width: 33%;
     margin: 0;
     border-top: 1px dotted #aaaaaa;
     border-right: 1px dotted #aaaaaa;
@@ -921,9 +930,9 @@ HOME PAGE
         -webkit-border-image: url("imgs/border-dots.png")5 5 5 5 repeat stretch;
         -moz-border-image: url("imgs/border-dots.png")5 5 5 5 repeat stretch;
         border-image: url("imgs/border-dots.png")5 5 5 5 repeat stretch; */
-}
-.featured-one article.masonry-entry {width: 1500px;padding: 0;border-top: 0;border-right: 0;}
-.featured-two article.masonry-entry {width: 1000px;}
+/*}*/
+.featured-one article.item {width: 100%;padding: 0;border-top: 0;border-right: 0;}
+.featured-two article.item {width: 66%;}
 
 .featured-one div.post-cat-icon {
     display: none;
@@ -1017,7 +1026,7 @@ HOME PAGE
 }
 
 
-/*Media Queries*/
+/*Media Queries
 @media only screen and (max-width : 1440px),
 only screen and (max-device-width : 1440px){
     #masonry-loop{width: 1440px;}
@@ -1053,7 +1062,7 @@ only screen and (max-device-width : 399px){
     #masonry-loop{
         width: 200px;
     }
-}
+}*/
 
 /*--------------------------------------------------------------
 10.1 Posts and pages

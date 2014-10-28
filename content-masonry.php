@@ -1,6 +1,6 @@
 <!-- content masonry -->
 <div <?php post_class(); ?>>
-    <article class="masonry-entry" id="post-<?php the_ID(); ?>"  >
+    <article class="item" id="post-<?php the_ID(); ?>"  >
         <?php if ( has_post_thumbnail() ) :
             $cats = get_the_category();
             $cat_name = $cats[0]-> name; ?>

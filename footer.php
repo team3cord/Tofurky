@@ -31,17 +31,19 @@
 <script>
     jQuery(function($){
         $(document).ready(function(){
-    //set the container that Masonry will be inside of in a var
-    var container = document.querySelector('#masonry-loop');
-    //create empty var msnry
-    var msnry;
-    // initialize Masonry after all images have loaded
-    imagesLoaded( container, function() {
-        msnry = new Masonry( container, {
-            columnWidth: 500,
-            itemSelector: '.masonry-entry'
-        });
-    });
+            // initialize Isotope after all images have loaded
+            var wWidth = $(window).width();
+            var colWidth = (wWidth / 3);
+            console.log(wWidth);
+            console.log(colWidth);
+            $('.isotope').imagesLoaded( function() {
+                $('.isotope').isotope({
+                    itemSelector: '.item',
+                    masonry: {
+                        columnWidth: colWidth
+                    }
+                })
+           })
             function featuredImage(feature){
                 $(feature).eq(0).addClass('featured-one');
                 $(feature).eq(1).addClass('featured-two');

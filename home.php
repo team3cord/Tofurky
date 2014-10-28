@@ -11,7 +11,7 @@ get_header(); ?>
     <div id="home-primary" class="content-area">
 
         <main id="main" class="site-main" role="main">
-            <div id="masonry-loop">
+            <div id="masonry-loop" class="isotope">
                 <div class="featured-callout">
                     <span><?php echo get_field('main_featured_callout', 5); ?></span>
                 </div>
