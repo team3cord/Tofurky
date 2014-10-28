@@ -50,6 +50,7 @@
                 $(feature).eq(2).addClass('featured-three');
             }
             featuredImage('.sticky');
+            $('li.menu-item a').wrapInner('<span class="hide-mc"></span>');
         })
 });
 </script>
