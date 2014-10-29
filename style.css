@@ -675,7 +675,6 @@ footer.site-footer p {
     position: relative;
 	display: block;
 	float: right;
-    background: #ff00ff;
 }
 
 .main-navigation ul {
@@ -954,8 +953,8 @@ HOME PAGE
 }
 .featured-callout {
     position: absolute;
-    top: 220px;
-    left: 160px;
+    top: 5%;
+    left: 11%;
     z-index: 1;
 }
 .featured-callout span {
@@ -964,8 +963,8 @@ HOME PAGE
 }
 .featured-one div.masonry-details {
     position: absolute;
-    top: 460px;
-    left: 160px;
+    top: 54%;
+    left: 11%;
     width: 32%;
     z-index: 1;
 }
@@ -1041,43 +1040,7 @@ HOME PAGE
 }
 
 
-/*Media Queries
-@media only screen and (max-width : 1440px),
-only screen and (max-device-width : 1440px){
-    #masonry-loop{width: 1440px;}
-    .featured-one article.masonry-entry {width: 1440px}
-    .featured-two article.masonry-entry {width: 960px}
-    .masonry-entry {width:480px;}
-}
 
-
-@media only screen and (max-width : 999px),
-only screen and (max-device-width : 999px){
-    #masonry-loop{
-        width: 800px;
-    }
-}
-
-@media only screen and (max-width : 799px),
-only screen and (max-device-width : 799px){
-    #masonry-loop{
-        width: 600px;
-    }
-}
-
-@media only screen and (max-width : 599px),
-only screen and (max-device-width : 599px){
-    #masonry-loop{
-        width: 400px;
-    }
-}
-
-@media only screen and (max-width : 399px),
-only screen and (max-device-width : 399px){
-    #masonry-loop{
-        width: 200px;
-    }
-}*/
 
 /*--------------------------------------------------------------
 10.1 Posts and pages
@@ -1424,4 +1387,50 @@ object {
 
 .gallery-caption {
 	display: block;
+}
+/* ============================================================
+    Media Queries
+   ===========================================================*/
+
+@media only screen and (max-width : 1100px),
+only screen and (max-device-width : 1100px){
+    .featured-callout {top:3%;}
+    .featured-one div.masonry-details {width: 40%;}
+
+}
+
+
+@media only screen and (max-width : 900px),
+only screen and (max-device-width : 900px){
+    header.site-header {background-position: 20px 1px;}
+    .main-navigation ul {
+        width: 435px;
+    }
+    .main-navigation a {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+    #menu-item-11 a {background-position: 26px -9px;}
+    #menu-item-10 a {background-position: 21px -6px;}
+    #menu-item-12 a {background-position: 44px -9px;}
+    #menu-item-14 a {background-position: 19px -8px;}
+    .search-box-mc {width: 509px;}
+    .search-box-mc input[type='text']{width: 401px;}
+    .featured-callout span {font-size:100px;}
+    .featured-one div.masonry-details {width: 50%;}
+}
+
+@media only screen and (max-width : 770px),
+only screen and (max-device-width : 770px){
+
+}
+
+@media only screen and (max-width : 599px),
+only screen and (max-device-width : 599px){
+
+}
+
+@media only screen and (max-width : 399px),
+only screen and (max-device-width : 399px){
+
 }
