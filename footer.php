@@ -17,7 +17,7 @@
         <div class="footer-social">
             <ul>
                 <li><a class="pin-wt" href="http://www.pinterest.com/tofurky/" target="_blank"></a></li>
-                <li><a class="inst-wt" href="http://instagram.com/tofurky" target="_blank"></a></li>
+                <!--<li><a class="inst-wt" href="http://instagram.com/tofurky" target="_blank"></a></li>-->
                 <li><a class="fb-wt" href="https://www.facebook.com/TofurkyFan" target="_blank"></a></li>
                 <li><a class="twt-wt" href="https://twitter.com/@tofurky" target="_blank"></a></li>
                 <li><a class="rss-wt" href="#"></a></li>
@@ -30,7 +30,6 @@
 <?php wp_footer(); ?>
 <script>
     jQuery(function($){
-        $(document).ready(function(){
             // initialize Isotope after all images have loaded
             var wWidth = $(window).width();
             var colWidth = (wWidth / 3);
@@ -43,16 +42,28 @@
                         columnWidth: colWidth
                     }
                 })
-           })
-            function featuredImage(feature){
-                $(feature).eq(0).addClass('featured-one');
-                $(feature).eq(1).addClass('featured-two');
-                $(feature).eq(2).addClass('featured-three');
-            }
-            featuredImage('.sticky');
-            $('li.menu-item a').wrapInner('<span class="hide-mc"></span>');
+            })
+        $(window).resize(function(){
+
+            // initialize Isotope after all images have loaded
+            var wWidth = $(window).width();
+            var colWidth = (wWidth / 3);
+            console.log(wWidth);
+            console.log(colWidth);
+            $('.isotope').imagesLoaded( function() {
+                $('.isotope').isotope({
+                    itemSelector: '.item',
+                    masonry: {
+                        columnWidth: colWidth
+                    }
+                })
+            })
         })
-});
+    });
+
+
+
+
 </script>
 
 </body>

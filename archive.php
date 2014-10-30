@@ -16,8 +16,8 @@ get_header(); ?>
 		<?php if ( have_posts() ) : ?>
 
 			<header class="page-header">
-				<h1 class="page-title">
-					<?php
+			<!--	<h1 class="page-title">
+					<//?php
 						if ( is_category() ) :
 							single_cat_title();
 
@@ -69,13 +69,13 @@ get_header(); ?>
 						endif;
 					?>
 				</h1>
-				<?php
+				<//?php
 					// Show an optional term description.
 					$term_description = term_description();
 					if ( ! empty( $term_description ) ) :
 						printf( '<div class="taxonomy-description">%s</div>', $term_description );
 					endif;
-				?>
+				?> -->
 			</header><!-- .page-header -->
 
 			<?php /* Start the Loop */ ?>
@@ -86,7 +86,7 @@ get_header(); ?>
 					 * If you want to override this in a child theme, then include a file
 					 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
 					 */
-					get_template_part( 'content', get_post_format() );
+					get_template_part( 'content', 'masonry');
 				?>
 
 			<?php endwhile; ?>

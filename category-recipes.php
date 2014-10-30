@@ -2,11 +2,9 @@
 <!-- cat recipes -->
 
 <div id="cat-primary" class="content-area">
-    <div class="featured-one">
-        <img src="<?php echo get_template_directory_uri(); ?>/imgs/main-featured-fpo.jpg">
-    </div>
+
     <main id="main" class="site-main" role="main">
-        <div id="masonry-loop">
+        <div id="masonry-loop" class="isotope">
 
 
 

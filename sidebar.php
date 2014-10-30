@@ -19,7 +19,7 @@
         <?php echo do_shortcode('[contact-form-7 id="79" title="Sidebar Email Signup"]');?>
         <ul>
             <li class="side-pin"><a href="http://www.pinterest.com/tofurky/" target="_blank"></a></li>
-            <li class="side-inst"><a href="http://instagram.com/tofurky" target="_blank"></a></li>
+        <!--<li class="side-inst"><a href="http://instagram.com/tofurky" target="_blank"></a></li>-->
             <li class="side-fb"><a href="https://www.facebook.com/TofurkyFan" target="_blank"></a></li>
             <li class="side-twt"><a href="https://twitter.com/@tofurky" target="_blank"></a></li>
             <li class="side-rss"><a href="#" target="_blank"></a></li>

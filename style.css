@@ -243,6 +243,13 @@ small {
 big {
 	font-size: 125%;
 }
+@font-face {
+    font-family:'Museo Slab 300italic';
+    src:url('fonts/museo-slab-300-italic.eot');
+    src:url('fonts/museo-slab-300-italic.eot?#iefix') format('embedded-opentype'),
+    url('fonts/bill.woff') format('woff'),
+    url('fonts/museo-slab-300-italic.ttf') format('truetype'),
+}
 
 /*--------------------------------------------------------------
 3.0 Elements
@@ -481,7 +488,6 @@ header.site-header{
     background-repeat: no-repeat;
     background-position: 50px 1px;
     color: #fff;
-    font-family: 'PT Sans', sans-serif;
     z-index: 2;
 
 // set animation
@@ -548,7 +554,6 @@ header.site-header.sticky .search-box-btn a {
     right: 0;
     width: 609px;
     height:108px;
-    background: #ff00ff;
     z-index: 2;
 // set animation
 -webkit-transition: all 1.0s ease;
@@ -565,6 +570,9 @@ header.site-header.sticky .search-box-btn a {
     width: 501px;
     padding-left: 85px;
     background-color: #589102;
+    font-family: "josefinslab", serif;
+    font-weight: 300;
+    font-style: italic;
     font-size: 24px;
     border: none;
     border-radius: 0;
@@ -591,6 +599,17 @@ header.site-header.sticky .search-box-btn a {
 .search-box-mc input[type='text']:-ms-input-placeholder {
     color: rgba(129,196,27,0.9);
 }
+header.site-header.sticky .search-box-mc {
+    height: 48px;
+}
+header.site-header.sticky .search-box-mc input[type='text'] {
+    height: 48px;
+}
+header.site-header.sticky .search-box-mc input[type='image'] {
+    height: 48px;
+    top:-4px;
+    right: 34px;
+}
 /* =============================================================
 FOOTER
 ==============================================================*/
@@ -607,6 +626,8 @@ footer.site-footer p {
     padding: 0;
 }
 .footer-label {
+    font-family: "josefinslab",serif;
+    font-weight: 300;
     display: inline-block;
     float: left;
     padding: 16px 25px 0 0;
@@ -619,6 +640,8 @@ footer.site-footer p {
 }
 
 .footer-contact input[type='email'] {
+    font-family: "Roboto",sans-serif;
+    font-weight: 400;
     width: 303px;
     height: 40px;
     padding: 6px 0 0 20px;
@@ -627,6 +650,8 @@ footer.site-footer p {
     color: #4e4c4c;
 }
 .footer-privacy {
+    font-family: "Roboto",sans-serif;
+    font-weight: 400;
     display: inline-block;
     float: left;
     padding: 21px 0 0 25px;
@@ -698,12 +723,18 @@ footer.site-footer p {
     color: #ffffff;
     padding-left: 35px ;
     padding-right: 35px;
+    font-family: "JosefinSlab", serif;
+    font-weight: 300;
     font-size: 15px;
     font-style: italic;
 	text-decoration: none;
     text-transform: lowercase;
-    border-left: 1px dotted #aaaaaa;
+    border-width:0px 0px 0px 1px;
+    -moz-border-image:url("imgs/new-dots.png") 0 0 0 1 repeat repeat;
+    -webkit-border-image:url("imgs/new-dots.png") 0 0 0 1 repeat repeat;
+    border-image:url("imgs/new-dots.png") 0 0 0 1 repeat repeat;
 }
+#mc-search {border: none;}
 
 #menu-item-11 a {
     background-image: url("imgs/reci-icon.png");
@@ -924,8 +955,11 @@ HOME PAGE
     float: left;
     width: 33.2%;
     padding: 1%;
-    border-top: 1px dotted #aaaaaa;
-    border-right: 1px dotted #aaaaaa;
+    border-width:1px 1px 1px 1px;
+    -moz-border-image:url("imgs/new-dots.png") 1 1 1 1 repeat repeat;
+    -webkit-border-image:url("imgs/new-dots.png") 1 1 1 1 repeat repeat;
+    border-image:url("imgs/new-dots.png") 1 1 1 1 repeat repeat;
+
 }
 /* clear fix */
 .isotope:after {
@@ -958,6 +992,9 @@ HOME PAGE
     z-index: 1;
 }
 .featured-callout span {
+    font-family: "josefinslab", serif;
+    font-weight: 100;
+    font-style: italic;
     font-size: 140px;
     text-shadow:  -7px -3px 12px rgba(133,133,135, 0.5),-7px -3px 12px rgba(133,133,135, 0.5);
 }
@@ -970,7 +1007,10 @@ HOME PAGE
 }
 .featured-one div.masonry-details h5 span {
     color: #73be02;
+    font-family: "josefinslab",serif;
+    font-weight: 300;
     font-size: 34px;
+
 }
 
 .item img {
@@ -1011,6 +1051,9 @@ HOME PAGE
     display: block;
 }*/
 .masonry-post-title {
+    font-family: "josefinslab",serif;
+    font-weight: 300;
+    font-style: italic;
     font-size: 24px;
     margin-bottom: 25px;
     color: #585757;
@@ -1026,6 +1069,8 @@ HOME PAGE
     background-repeat: no-repeat;
     background-position: 1px 1px;
     color: #bbbbbb;
+    font-family: "Roboto",sans-serif;
+    font-weight: 400;
 }
 .tag-list {
     display: inline-block;
@@ -1034,10 +1079,13 @@ HOME PAGE
     background-repeat: no-repeat;
     background-position: 1px 1px;
     color: #bbbbbb;
+    font-family: "Roboto",sans-serif;
+    font-weight: 400;
 }
 .tag-list a {
     color: #bbbbbb;
 }
+
 
 
 
@@ -1095,6 +1143,8 @@ HOME PAGE
     padding: 130px 40px 30px 40px;
 }
 .entry-header h1 {
+    font-family: "josefinslab",serif;
+    font-weight: 300;
     font-size: 44px;
     font-weight: normal;
     color: #73be02;
@@ -1112,6 +1162,8 @@ HOME PAGE
 }
 .entry-content-single p {
     padding: 5px 40px;
+    font-family: "Roboto",sans-serif;
+    font-weight: 300;
     font-size: 17px;
     margin: 0;
     color: #585757;
@@ -1161,12 +1213,83 @@ p.full-image {
     float: left;
     padding: 30px;
 }
+.entry-footer .tag-list a, .comments-area span {
+    font-family: "roboto",sans-serif;
+    font-weight: 700;
+    color: #585757;
+    text-decoration: none;
+}
 .comments-area {
     display: block;
     float: left;
     padding: 30px;
+    border-top: 1px dotted #aaaaaa;
 }
+.comments-area p {
+    font-family: "Roboto",sans-serif;
+    font-weight: 300;
+    font-size: 17px;
 
+}
+.comments-area input[type='submit'] {
+    height: 30px;
+    width: 130px;
+    border: none;
+    border-radius: 10px;
+    background: #4e4c4c;
+    color: #ffffff;
+    font-family: 'roboto',sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    padding: 6px;
+    box-shadow: none;
+}
+.vcard {
+    float: left;
+    width: 30%;
+}
+.vcard img {
+    height: 70px;
+    width: 70px;
+}
+.fn, .says {
+    display: inline-block;
+    margin-bottom: 15px;
+}
+.comment-metadata {
+    float: left;
+    width: 70%;
+    padding-top: 25px;
+}
+.comment {
+    border-bottom: 1px dotted #aaaaaa;
+}
+.not-found {
+    margin-top: 145px;
+    padding-left: 25px;
+}
+.not-found h1 {
+    font-family: "josefinslab",serif;
+    font-weight: 300;
+    font-size: 44px;
+    color: #73be02;
+}
+.not-found input[type='text']{
+    display: block;
+    float: left;
+    height: 114px;
+    width: 501px;
+    padding-left: 85px;
+    background-color: #589102;
+    font-family: "josefinslab", serif;
+    font-weight: 300;
+    font-style: italic;
+    font-size: 24px;
+    border: none;
+    border-radius: 0;
+    color: #ffffff;
+    border-right: 1px dotted #aaaaaa;
+}
 /*--------------------------------------------------------------
 10.2 Asides
 --------------------------------------------------------------*/
@@ -1178,11 +1301,15 @@ p.full-image {
     padding: 0 30px;
 }
 #secondary h1 {
+    font-family: "josefinslab",serif;
+    font-weight: 300;
     font-size: 32px;
     color: #73be02;
 }
 
 .widget_text p {
+    font-family: "Roboto",sans-serif;
+    font-weight: 700;
     font-size: 15px;
     color: #4e4c4c;
 }
@@ -1198,8 +1325,9 @@ p.full-image {
      width: 301px;
     margin-top: 5px;
      padding: 10px 0 0 20px;
+    font-family: "Roboto",sans-serif;
+    font-weight: 700;
      font-size: 14px;
-    font-weight: bold;
      border: 1px solid #aaaaaa;
      border-radius: 10px;
      color: #ffffff;
@@ -1221,6 +1349,8 @@ p.full-image {
     color: rgba(78,76,76,0.9);
 }
 .side-email span {
+    font-family: "josefinslab",serif;
+    font-weight: 300;
     font-size: 22px;
     font-style: italic;
 }
@@ -1262,6 +1392,8 @@ p.full-image {
 }
 
 .side-recent-post h5 {
+    font-family: "josefinslab",serif;
+    font-weight: 300;
     font-size: 22px;
     padding: 0 30px 15px 30px;
 }
@@ -1398,7 +1530,12 @@ only screen and (max-device-width : 1100px){
     .featured-one div.masonry-details {width: 40%;}
 
 }
+@media only screen and (max-width : 970px),
+only screen and (max-device-width : 970px){
+    .featured-callout {top:1.5%;}
+    .not-found input[type='text']{width: 370px;}
 
+}
 
 @media only screen and (max-width : 900px),
 only screen and (max-device-width : 900px){
@@ -1415,16 +1552,34 @@ only screen and (max-device-width : 900px){
     #menu-item-12 a {background-position: 44px -9px;}
     #menu-item-14 a {background-position: 19px -8px;}
     .search-box-mc {width: 509px;}
-    .search-box-mc input[type='text']{width: 401px;}
+    .search-box-mc input[type='text']{width: 421px;}
     .featured-callout span {font-size:100px;}
     .featured-one div.masonry-details {width: 50%;}
+    .item {width: 49.5%;}
+    .featured-two article.item {width: 100%;}
 }
 
 @media only screen and (max-width : 770px),
 only screen and (max-device-width : 770px){
-
+    #primary,#secondary {width: 100%;border-right: none;}
+    .item {width: 100%;}
 }
 
+@media only screen and (max-width : 545px),
+only screen and (max-device-width : 545px){
+    .footer-label {
+        display: block;
+        text-align: center;
+        float: none;
+    }
+    .footer-contact {
+        display: block;
+        float: none;
+        padding: 0;
+        margin: 0 auto;
+    }
+    .footer-contact input[type='email']{width: 100%;}
+}
 @media only screen and (max-width : 599px),
 only screen and (max-device-width : 599px){
 

@@ -49,5 +49,12 @@ jQuery(function($){
             $('.search-box-mc').addClass('display-search');
         });
         $('.entry-content-single img').parent('p').addClass('full-image');
+        function featuredImage(feature){
+                $(feature).eq(0).addClass('featured-one');
+                $(feature).eq(1).addClass('featured-two');
+                $(feature).eq(2).addClass('featured-three');
+            }
+            featuredImage('.sticky');
+            $('li.menu-item a').wrapInner('<span class="hide-mc"></span>');
     })
 });
