@@ -89,12 +89,13 @@
 		<nav id="site-navigation" class="main-navigation" role="navigation">
 
             <span class="filter-text">filtered by:</span>
-			<button class="menu-toggle"><?php _e( 'Primary Menu', 'hood-river' ); ?></button>
+
 			<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
             <div class="search-box-mc"><?php get_search_form('searchform'); ?></div>
                 <div class="search-box-btn"><a id="mc-search" href="#"></a></div>
 
-		</nav><!-- #site-navigation -->
+        </nav><!-- #site-navigation -->
+        <div class="menu-toggle"><a id="mobile-men" href="#"> <img src="<?php echo esc_url( home_url( '/' ) ); ?>/wp-content/themes/hood-river/imgs/hamburger.jpg"></a></div>
 	</header><!-- #masthead -->
 
 	<div id="content" class="site-content">
