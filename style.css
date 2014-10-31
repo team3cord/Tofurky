@@ -21,6 +21,8 @@ along with Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normali
 and Blueprint http://www.blueprintcss.org/
 */
 
+@import url('blogtofurky.css');
+
 /*--------------------------------------------------------------
 >>> TABLE OF CONTENTS:
 ----------------------------------------------------------------
@@ -48,6 +50,7 @@ and Blueprint http://www.blueprintcss.org/
 /*--------------------------------------------------------------
 1.0 Reset
 --------------------------------------------------------------*/
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -148,8 +151,8 @@ button,
 input,
 select,
 textarea {
-	color: #404040;
-	font-family: sans-serif;
+	color: #4e4c4c;
+	font-family: "ProximaNova-Light";
 	font-size: 16px;
 	font-size: 1.6rem;
 	line-height: 1.5;
@@ -242,13 +245,6 @@ small {
 
 big {
 	font-size: 125%;
-}
-@font-face {
-    font-family:'Museo Slab 300italic';
-    src:url('fonts/museo-slab-300-italic.eot');
-    src:url('fonts/museo-slab-300-italic.eot?#iefix') format('embedded-opentype'),
-    url('fonts/bill.woff') format('woff'),
-    url('fonts/museo-slab-300-italic.ttf') format('truetype'),
 }
 
 /*--------------------------------------------------------------
@@ -420,20 +416,19 @@ textarea {
 /*--------------------------------------------------------------
 5.1 Links
 --------------------------------------------------------------*/
-/*a {
-	color: royalblue;
+a {
+	color: #73be02 ;
 }
 
 a:visited {
-	color: purple;
+	color: #589102;
 }
 
 a:hover,
 a:focus,
 a:active {
-	color: midnightblue;
+	color: #589102;
 }
-*/
 /* =============================================================
 STICKY HEADER
 ==============================================================*/
@@ -570,7 +565,7 @@ header.site-header.sticky .search-box-btn a {
     width: 501px;
     padding-left: 85px;
     background-color: #589102;
-    font-family: "josefinslab", serif;
+    font-family: "MuseoSlab-300Italic", serif;
     font-weight: 300;
     font-style: italic;
     font-size: 24px;
@@ -626,8 +621,9 @@ footer.site-footer p {
     padding: 0;
 }
 .footer-label {
-    font-family: "josefinslab",serif;
+    font-family: "MuseoSlab-300Italic",serif;
     font-weight: 300;
+    font-style: italic;
     display: inline-block;
     float: left;
     padding: 16px 25px 0 0;
@@ -640,8 +636,8 @@ footer.site-footer p {
 }
 
 .footer-contact input[type='email'] {
-    font-family: "Roboto",sans-serif;
-    font-weight: 400;
+    font-family: "ProximaNova Bold",sans-serif;
+    font-weight: 700;
     width: 303px;
     height: 40px;
     padding: 6px 0 0 20px;
@@ -650,7 +646,7 @@ footer.site-footer p {
     color: #4e4c4c;
 }
 .footer-privacy {
-    font-family: "Roboto",sans-serif;
+    font-family: "ProximaNova-Regular",sans-serif;
     font-weight: 400;
     display: inline-block;
     float: left;
@@ -723,10 +719,9 @@ footer.site-footer p {
     color: #ffffff;
     padding-left: 35px ;
     padding-right: 35px;
-    font-family: "JosefinSlab", serif;
+    font-family: "MuseoSlab-300", serif;
     font-weight: 300;
-    font-size: 15px;
-    font-style: italic;
+    font-size: 13px;
 	text-decoration: none;
     text-transform: lowercase;
     border-width:0px 0px 0px 1px;
@@ -992,7 +987,7 @@ HOME PAGE
     z-index: 1;
 }
 .featured-callout span {
-    font-family: "josefinslab", serif;
+    font-family: "MuseoSlab-100Italic", serif;
     font-weight: 100;
     font-style: italic;
     font-size: 140px;
@@ -1007,7 +1002,7 @@ HOME PAGE
 }
 .featured-one div.masonry-details h5 span {
     color: #73be02;
-    font-family: "josefinslab",serif;
+    font-family: "MuseoSlab-300",serif;
     font-weight: 300;
     font-size: 34px;
 
@@ -1051,16 +1046,17 @@ HOME PAGE
     display: block;
 }*/
 .masonry-post-title {
-    font-family: "josefinslab",serif;
+    font-family: "MuseoSlab-300",serif;
     font-weight: 300;
-    font-style: italic;
     font-size: 24px;
     margin-bottom: 25px;
-    color: #585757;
 }
 .masonry-details a {
     text-decoration: none;
     color: #403e3e;
+}
+.masonry-details a:hover {
+    color: #589102;
 }
 .comment-num {
     display: inline-block;
@@ -1069,8 +1065,8 @@ HOME PAGE
     background-repeat: no-repeat;
     background-position: 1px 1px;
     color: #bbbbbb;
-    font-family: "Roboto",sans-serif;
-    font-weight: 400;
+    font-family: "MuseoSlab-300",sans-serif;
+    font-weight: 300;
 }
 .tag-list {
     display: inline-block;
@@ -1079,8 +1075,8 @@ HOME PAGE
     background-repeat: no-repeat;
     background-position: 1px 1px;
     color: #bbbbbb;
-    font-family: "Roboto",sans-serif;
-    font-weight: 400;
+    font-family: "MuseoSlab-300",sans-serif;
+    font-weight: 300;
 }
 .tag-list a {
     color: #bbbbbb;
@@ -1143,7 +1139,7 @@ HOME PAGE
     padding: 130px 40px 30px 40px;
 }
 .entry-header h1 {
-    font-family: "josefinslab",serif;
+    font-family: "MuseoSlab-300",serif;
     font-weight: 300;
     font-size: 44px;
     font-weight: normal;
@@ -1162,7 +1158,7 @@ HOME PAGE
 }
 .entry-content-single p {
     padding: 5px 40px;
-    font-family: "Roboto",sans-serif;
+    font-family: "ProximaNova-Light",sans-serif;
     font-weight: 300;
     font-size: 17px;
     margin: 0;
@@ -1214,7 +1210,7 @@ p.full-image {
     padding: 30px;
 }
 .entry-footer .tag-list a, .comments-area span {
-    font-family: "roboto",sans-serif;
+    font-family: "ProximaNova-Bold",sans-serif;
     font-weight: 700;
     color: #585757;
     text-decoration: none;
@@ -1226,8 +1222,8 @@ p.full-image {
     border-top: 1px dotted #aaaaaa;
 }
 .comments-area p {
-    font-family: "Roboto",sans-serif;
-    font-weight: 300;
+    font-family: "ProximaNova-Bold",sans-serif;
+    font-weight: 700;
     font-size: 17px;
 
 }
@@ -1238,7 +1234,7 @@ p.full-image {
     border-radius: 10px;
     background: #4e4c4c;
     color: #ffffff;
-    font-family: 'roboto',sans-serif;
+    font-family: 'ProximaNova-Bold',sans-serif;
     font-weight: 700;
     font-size: 15px;
     padding: 6px;
@@ -1269,7 +1265,7 @@ p.full-image {
     padding-left: 25px;
 }
 .not-found h1 {
-    font-family: "josefinslab",serif;
+    font-family: "MuseoSlab-300",serif;
     font-weight: 300;
     font-size: 44px;
     color: #73be02;
@@ -1281,7 +1277,7 @@ p.full-image {
     width: 501px;
     padding-left: 85px;
     background-color: #589102;
-    font-family: "josefinslab", serif;
+    font-family: "MuseoSlab-300Italic", serif;
     font-weight: 300;
     font-style: italic;
     font-size: 24px;
@@ -1301,14 +1297,14 @@ p.full-image {
     padding: 0 30px;
 }
 #secondary h1 {
-    font-family: "josefinslab",serif;
+    font-family: "MuseoSlab-300",serif;
     font-weight: 300;
     font-size: 32px;
     color: #73be02;
 }
 
 .widget_text p {
-    font-family: "Roboto",sans-serif;
+    font-family: "ProximaNova-Bold",sans-serif;
     font-weight: 700;
     font-size: 15px;
     color: #4e4c4c;
@@ -1325,7 +1321,7 @@ p.full-image {
      width: 301px;
     margin-top: 5px;
      padding: 10px 0 0 20px;
-    font-family: "Roboto",sans-serif;
+    font-family: "ProximaNova-Bold",sans-serif;
     font-weight: 700;
      font-size: 14px;
      border: 1px solid #aaaaaa;
@@ -1349,7 +1345,7 @@ p.full-image {
     color: rgba(78,76,76,0.9);
 }
 .side-email span {
-    font-family: "josefinslab",serif;
+    font-family: "MuseoSlab-300Italic",serif;
     font-weight: 300;
     font-size: 22px;
     font-style: italic;
@@ -1392,7 +1388,7 @@ p.full-image {
 }
 
 .side-recent-post h5 {
-    font-family: "josefinslab",serif;
+    font-family: "MuseoSlab-300",serif;
     font-weight: 300;
     font-size: 22px;
     padding: 0 30px 15px 30px;

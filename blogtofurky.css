@@ -1,0 +1,76 @@
+/**
+ * @license
+ * MyFonts Webfont Build ID 2912919, 2014-10-30T17:31:47-0400
+ * 
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are 
+ * explicitly restricted from using the Licensed http://localhost/tofurky/wp-content/themes/hood-river/fonts(s).
+ * 
+ * You may obtain a valid license at the URLs below.
+ * 
+ * Webfont: MuseoSlab-300 by exljbris
+ * URL: http://www.myfonts.com/fonts/exljbris/museo-slab/300/
+ * Copyright: Copyright (c) 2009 by Jos Buivenga. All rights reserved.
+ * Licensed pageviews: 500,000
+ * 
+ * Webfont: MuseoSlab-300Italic by exljbris
+ * URL: http://www.myfonts.com/fonts/exljbris/museo-slab/300-italic/
+ * Copyright: Copyright (c) 2009 by Jos Buivenga. All rights reserved.
+ * Licensed pageviews: 500,000
+ * 
+ * Webfont: MuseoSlab-100Italic by exljbris
+ * URL: http://www.myfonts.com/fonts/exljbris/museo-slab/100-italic/
+ * Copyright: Copyright (c) 2009 by Jos Buivenga. All rights reserved.
+ * Licensed pageviews: 500,000
+ * 
+ * Webfont: ProximaNova-LightIt by Mark Simonson
+ * URL: http://www.myfonts.com/fonts/marksimonson/proxima-nova/light-it/
+ * Copyright: Copyright (c) Mark Simonson, 2005. All rights reserved.
+ * Licensed pageviews: 1,000,000
+ * 
+ * Webfont: ProximaNova-Light by Mark Simonson
+ * URL: http://www.myfonts.com/fonts/marksimonson/proxima-nova/light/
+ * Copyright: Copyright (c) Mark Simonson, 2005. All rights reserved.
+ * Licensed pageviews: 1,000,000
+ * 
+ * Webfont: ProximaNova-Regular by Mark Simonson
+ * URL: http://www.myfonts.com/fonts/marksimonson/proxima-nova/regular/
+ * Copyright: Copyright (c) Mark Simonson, 2005. All rights reserved.
+ * Licensed pageviews: 1,000,000
+ * 
+ * Webfont: ProximaNova-Bold by Mark Simonson
+ * URL: http://www.myfonts.com/fonts/marksimonson/proxima-nova/bold/
+ * Copyright: Copyright (c) Mark Simonson, 2005. All rights reserved.
+ * Licensed pageviews: 1,000,000
+ * 
+ * 
+ * License: http://www.myfonts.com/viewlicense?type=web&buildid=2912919
+ * 
+ * © 2014 MyFonts Inc
+*/
+
+
+/* @import must be at top of file, otherwise CSS will not work */
+@import url("//hello.myfonts.net/count/2c7297");
+
+  
+@font-face {font-family: 'MuseoSlab-300';src: url('http://localhost/tofurky/wp-content/themes/hood-river/fonts/2C7297_0_0.eot');src: url('http://localhost/tofurky/wp-content/themes/hood-river/fonts/2C7297_0_0.eot?#iefix') format('embedded-opentype'),url('http://localhost/tofurky/wp-content/themes/hood-river/fonts/2C7297_0_0.woff2') format('woff2'),url('http://localhost/tofurky/wp-content/themes/hood-river/fonts/2C7297_0_0.woff') format('woff'),url('http://localhost/tofurky/wp-content/themes/hood-river/fonts/2C7297_0_0.ttf') format('truetype'),url('http://localhost/tofurky/wp-content/themes/hood-river/fonts/2C7297_0_0.svg#wf') format('svg');}
+ 
+  
+@font-face {font-family: 'MuseoSlab-300Italic';src: url('http://localhost/tofurky/wp-content/themes/hood-river/fonts/2C7297_1_0.eot');src: url('http://localhost/tofurky/wp-content/themes/hood-river/fonts/2C7297_1_0.eot?#iefix') format('embedded-opentype'),url('http://localhost/tofurky/wp-content/themes/hood-river/fonts/2C7297_1_0.woff2') format('woff2'),url('http://localhost/tofurky/wp-content/themes/hood-river/fonts/2C7297_1_0.woff') format('woff'),url('http://localhost/tofurky/wp-content/themes/hood-river/fonts/2C7297_1_0.ttf') format('truetype'),url('http://localhost/tofurky/wp-content/themes/hood-river/fonts/2C7297_1_0.svg#wf') format('svg');}
+ 
+  
+@font-face {font-family: 'MuseoSlab-100Italic';src: url('http://localhost/tofurky/wp-content/themes/hood-river/fonts/2C7297_2_0.eot');src: url('http://localhost/tofurky/wp-content/themes/hood-river/fonts/2C7297_2_0.eot?#iefix') format('embedded-opentype'),url('http://localhost/tofurky/wp-content/themes/hood-river/fonts/2C7297_2_0.woff2') format('woff2'),url('http://localhost/tofurky/wp-content/themes/hood-river/fonts/2C7297_2_0.woff') format('woff'),url('http://localhost/tofurky/wp-content/themes/hood-river/fonts/2C7297_2_0.ttf') format('truetype'),url('http://localhost/tofurky/wp-content/themes/hood-river/fonts/2C7297_2_0.svg#wf') format('svg');}
+ 
+  
+@font-face {font-family: 'ProximaNova-LightIt';src: url('http://localhost/tofurky/wp-content/themes/hood-river/fonts/2C7297_3_0.eot');src: url('http://localhost/tofurky/wp-content/themes/hood-river/fonts/2C7297_3_0.eot?#iefix') format('embedded-opentype'),url('http://localhost/tofurky/wp-content/themes/hood-river/fonts/2C7297_3_0.woff2') format('woff2'),url('http://localhost/tofurky/wp-content/themes/hood-river/fonts/2C7297_3_0.woff') format('woff'),url('http://localhost/tofurky/wp-content/themes/hood-river/fonts/2C7297_3_0.ttf') format('truetype'),url('http://localhost/tofurky/wp-content/themes/hood-river/fonts/2C7297_3_0.svg#wf') format('svg');}
+ 
+  
+@font-face {font-family: 'ProximaNova-Light';src: url('http://localhost/tofurky/wp-content/themes/hood-river/fonts/2C7297_4_0.eot');src: url('http://localhost/tofurky/wp-content/themes/hood-river/fonts/2C7297_4_0.eot?#iefix') format('embedded-opentype'),url('http://localhost/tofurky/wp-content/themes/hood-river/fonts/2C7297_4_0.woff2') format('woff2'),url('http://localhost/tofurky/wp-content/themes/hood-river/fonts/2C7297_4_0.woff') format('woff'),url('http://localhost/tofurky/wp-content/themes/hood-river/fonts/2C7297_4_0.ttf') format('truetype'),url('http://localhost/tofurky/wp-content/themes/hood-river/fonts/2C7297_4_0.svg#wf') format('svg');}
+ 
+  
+@font-face {font-family: 'ProximaNova-Regular';src: url('http://localhost/tofurky/wp-content/themes/hood-river/fonts/2C7297_5_0.eot');src: url('http://localhost/tofurky/wp-content/themes/hood-river/fonts/2C7297_5_0.eot?#iefix') format('embedded-opentype'),url('http://localhost/tofurky/wp-content/themes/hood-river/fonts/2C7297_5_0.woff2') format('woff2'),url('http://localhost/tofurky/wp-content/themes/hood-river/fonts/2C7297_5_0.woff') format('woff'),url('http://localhost/tofurky/wp-content/themes/hood-river/fonts/2C7297_5_0.ttf') format('truetype'),url('http://localhost/tofurky/wp-content/themes/hood-river/fonts/2C7297_5_0.svg#wf') format('svg');}
+ 
+  
+@font-face {font-family: 'ProximaNova-Bold';src: url('http://localhost/tofurky/wp-content/themes/hood-river/fonts/2C7297_6_0.eot');src: url('http://localhost/tofurky/wp-content/themes/hood-river/fonts/2C7297_6_0.eot?#iefix') format('embedded-opentype'),url('http://localhost/tofurky/wp-content/themes/hood-river/fonts/2C7297_6_0.woff2') format('woff2'),url('http://localhost/tofurky/wp-content/themes/hood-river/fonts/2C7297_6_0.woff') format('woff'),url('http://localhost/tofurky/wp-content/themes/hood-river/fonts/2C7297_6_0.ttf') format('truetype'),url('http://localhost/tofurky/wp-content/themes/hood-river/fonts/2C7297_6_0.svg#wf') format('svg');}
+ 
