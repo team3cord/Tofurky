@@ -565,7 +565,7 @@ header.site-header.sticky .search-box-btn a {
     position: absolute;
     top:0;
     height: 108px;
-    padding-left: 85px;
+    /* padding-left: 85px;*/
     background-color: #589102;
     font-family: "MuseoSlab-300Italic", serif;
     font-weight: 300;
@@ -581,7 +581,7 @@ header.site-header.sticky .search-box-btn a {
     top: -6px;
     right: 0;
 }
-.small-sticky {
+header.site-header.sticky div.small-sticky {
     width: 111px;
     height: 48px;
     background: #589102;
@@ -1690,6 +1690,9 @@ only screen and (max-device-width : 765px){
 
     #primary,#secondary {width: 100%;border-right: none;}
     .item {width: 100%;}
+    .entry-header{
+        padding-top: 10px;
+    }
 }
 
 @media only screen and (max-width : 635px),

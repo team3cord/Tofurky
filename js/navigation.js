@@ -9,24 +9,28 @@ jQuery(function($){
         var searchBox = $('.search-box-mc');
         var searchBtn = $('.search-box-btn');
         var searchInput = $('.search-box-mc input[type="text"]');
+        var searchImage =$('.search-box-mc input[type="image"]');
         searchBox.on('mouseenter', function(e){
             e.preventDefault();
-            searchInput.animate({
+            searchImage.removeClass('nomore');
+            searchInput.removeClass('nomore').animate({
                 right: "111",
-                width: "501"
+                width: "501",
+                padding: "0 0 0 85"
             }, 1000, function(){
-                searchBtn.removeClass('showme');
-                searchBtn.addClass('nomore');
+                searchBtn.removeClass('showme').addClass('nomore');
             });
         });
         searchBox.on('mouseleave', function(e){
             e.preventDefault();
             searchInput.animate({
                 right: "0",
-                width: "0"
+                width: "0",
+                padding: "0"
             }, 1000, function(){
-                searchBtn.removeClass('nomore');
-                searchBtn.addClass('showme');
+                searchBtn.removeClass('nomore').addClass('showme');
+                searchImage.addClass('nomore');
+                searchInput.addClass('nomore');
             });
         });
 
