@@ -696,7 +696,16 @@ footer.site-footer p {
 .twt-wt{background-position: -103px 24px}
 .rss-wt{background-position: -140px 24px}
 
-
+.footer-social ul li a:hover {
+    background-image: url("imgs/social-gr.png");
+}
+.pin-wt:hover {
+    background-position: 4px 24px
+}
+.inst-wt:hover {background-position: -32px 24px}
+.fb-wt:hover {background-position: -67px 24px}
+.twt-wt:hover {background-position: -103px 24px}
+.rss-wt:hover {background-position: -140px 24px}
 
 
 /*--------------------------------------------------------------
@@ -1062,8 +1071,11 @@ HOME PAGE
     background-repeat: no-repeat;
 }
 .post-cat-icon.Recipes {
-
     background-image: url("imgs/recipes-circle.png");
+    background-position: -5px -3px;
+}
+.post-cat-icon.Recipes:hover {
+    background-image: url("imgs/recipes-circle-hov.png");
     background-position: -5px -3px;
 }
 
@@ -1071,13 +1083,25 @@ HOME PAGE
     background-image: url("imgs/sus1-circle.png");
     background-position: -5px -8px;
 }
+.post-cat-icon.Sustainability:hover {
+    background-image: url("imgs/sus1-circle-hov.png");
+    background-position: -1px -1px;
+}
 .post-cat-icon.Lifestyle {
     background-image: url("imgs/lifestyle-circle.png");
     background-position: -4px -4px;
 }
+.post-cat-icon.Lifestyle:hover {
+    background-image: url("imgs/lifestyle-circle-hov.png");
+    background-position: -4px -8px;
+}
 .post-cat-icon.Events{
     background-image: url("imgs/events-circle.png");
-    background-position: -6px -10px;
+    background-position: -4px -4px;
+}
+.post-cat-icon.Events:hover {
+    background-image: url("imgs/event-circle-hov.png");
+    background-position: -4px -4px;
 }
 /*.masonry-entry.featured-two {
     width: 60%;
@@ -1408,6 +1432,9 @@ p.full-image {
     background-image: url("imgs/sidebar-social-sprite.png");
     background-repeat: no-repeat;
 }
+.side-email li a:hover {
+    background-image: url("imgs/sidebar-social-sprite-hov.png");
+}
 .side-pin a {background-position: 1px 1px}
 .side-inst a {background-position: -37px 1px}
 .side-fb a {background-position: -73px 1px}
@@ -1668,7 +1695,7 @@ only screen and (max-device-width : 765px){
     }
     .x-me {
 
-        background: url("imgs/x-me.jpg") 0 0 no-repeat;
+        background: url("imgs/x-me.png") 0 0 no-repeat;
     }
     .mobile-search-box-mc {
         position: relative;
