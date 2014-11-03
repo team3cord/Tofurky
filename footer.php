@@ -49,7 +49,7 @@
             var wWidth = $(window).width();
             var colWidth = (wWidth / 3);
             if (wWidth >= 765){
-                $('.main-navigation').css('display', 'block'); // Resizing browser from mobile nav
+                $('.main-navigation').addClass('showme'); // Resizing browser from mobile nav
             }
             console.log(wWidth);
             console.log(colWidth);

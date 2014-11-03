@@ -91,11 +91,22 @@
             <span class="filter-text">filtered by:</span>
 
 			<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
-            <div class="search-box-mc"><?php get_search_form('searchform'); ?></div>
+            <div class="search-box-mc"><?php get_search_form('searchform'); ?>
                 <div class="search-box-btn"><a id="mc-search" href="#"></a></div>
+            </div>
 
         </nav><!-- #site-navigation -->
-        <div class="menu-toggle"><a id="mobile-men" href="#"> <img src="<?php echo esc_url( home_url( '/' ) ); ?>/wp-content/themes/hood-river/imgs/hamburger.jpg"></a></div>
+        <nav id="" class="mobile-navigation" role="navigation">
+
+            <span class="filter-text">filtered by:</span>
+
+            <?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
+            <div class="mobile-search-box-mc"><?php get_search_form('searchform'); ?>
+                <div class="mobilesearch-box-btn"><a id="mc-search" href="#"></a></div>
+            </div>
+
+        </nav><!-- #mobile-navigation -->
+        <div class="menu-toggle"><a id="mobile-men" class="burger" href="#"></a></div>
 	</header><!-- #masthead -->
 
 	<div id="content" class="site-content">

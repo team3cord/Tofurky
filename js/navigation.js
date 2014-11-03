@@ -3,37 +3,32 @@
  *
  * Handles toggling the navigation menu for small screens.
  */
-( function() {
-	var container, button, menu;
 
-	container = document.getElementById( 'site-navigation' );
-	if ( ! container )
-		return;
-
-	button = container.getElementsByTagName( 'button' )[0];
-	if ( 'undefined' === typeof button )
-		return;
-
-	menu = container.getElementsByTagName( 'ul' )[0];
-
-	// Hide menu toggle button if menu is empty and return early.
-	if ( 'undefined' === typeof menu ) {
-		button.style.display = 'none';
-		return;
-	}
-
-	if ( -1 === menu.className.indexOf( 'nav-menu' ) )
-		menu.className += ' nav-menu';
-
-	button.onclick = function() {
-		if ( -1 !== container.className.indexOf( 'toggled' ) )
-			container.className = container.className.replace( ' toggled', '' );
-		else
-			container.className += ' toggled';
-	};
-} )();
 jQuery(function($){
     $(document).ready(function(){
+        var searchBox = $('.search-box-mc');
+        var searchBtn = $('.search-box-btn');
+        var searchInput = $('.search-box-mc input[type="text"]');
+        searchBox.on('mouseenter', function(e){
+            e.preventDefault();
+            searchInput.animate({
+                right: "111",
+                width: "501"
+            }, 1000, function(){
+                searchBtn.removeClass('showme');
+                searchBtn.addClass('nomore');
+            });
+        });
+        searchBox.on('mouseleave', function(e){
+            e.preventDefault();
+            searchInput.animate({
+                right: "0",
+                width: "0"
+            }, 1000, function(){
+                searchBtn.removeClass('nomore');
+                searchBtn.addClass('showme');
+            });
+        });
 
         $(window).scroll(function() {
             if ($('header.site-header').css('position') == 'fixed'){
@@ -49,10 +44,7 @@ jQuery(function($){
 
 
         });
-        $('#mc-search').on('click', function(e){
-            e.preventDefault();
-            $('.search-box-mc').addClass('display-search');
-        });
+
         $('.entry-content-single img').parent('p').addClass('full-image');
         function featuredImage(feature){
                 $(feature).eq(0).addClass('featured-one');
@@ -61,11 +53,18 @@ jQuery(function($){
         }
         featuredImage('.sticky');
         $('li.menu-item a').wrapInner('<span class="hide-mc"></span>');
-        $('#mobile-men').on('click', function(e){
+        var mobileMenu = $('#mobile-men');
+        mobileMenu.on('click', function(e){
             e.preventDefault();
-            $('.main-navigation').slideToggle(1000, function(){
+            $('.mobile-navigation').slideToggle(1000, function(){
                 // Animation complete.
-            })
+                if ((mobileMenu).hasClass('burger')){
+                    mobileMenu.removeClass('burger').addClass('x-me');
+                }
+                else {
+                    mobileMenu.removeClass('x-me').addClass('burger');
+                }
+            });
         });
     })
 });

@@ -212,7 +212,7 @@ var {
 
 abbr,
 acronym {
-	border-bottom: 1px dotted #666;
+	border-bottom: 1px solid #666;
 	cursor: help;
 }
 
@@ -433,8 +433,8 @@ a:active {
 STICKY HEADER
 ==============================================================*/
 .site-title  {
-    font-size: 0px;
     text-decoration: none;
+    text-indent: -99999px;
 }
 .filter-text {
     display: none;
@@ -543,11 +543,9 @@ header.site-header.sticky .search-box-btn a {
 }*/
 
 .search-box-mc {
-    display: none;
     position: absolute;
     top: 0;
     right: 0;
-    width: 609px;
     height:108px;
     z-index: 2;
 // set animation
@@ -557,12 +555,16 @@ header.site-header.sticky .search-box-btn a {
 .display-search {
     display: block;
 }
-.search-box-mc input[type='text']{
+.showme{
+    display: block;
+}
+.nomore{
+    display: none;
+}
+.mobile-search-box-mc input[type='text'], .search-box-mc input[type='text']{
     position: absolute;
     top:0;
-    right: 111px;
     height: 108px;
-    width: 501px;
     padding-left: 85px;
     background-color: #589102;
     font-family: "MuseoSlab-300Italic", serif;
@@ -572,12 +574,17 @@ header.site-header.sticky .search-box-btn a {
     border: none;
     border-radius: 0;
     color: #ffffff;
-    border-right: 1px dotted #aaaaaa;
+    border-right: 1px solid #aaaaaa;
 }
-.search-box-mc input[type='image']{
+.mobile-search-box-mc input[type='image'], .search-box-mc input[type='image']{
    position: absolute;
     top: -6px;
     right: 0;
+}
+.small-sticky {
+    width: 111px;
+    height: 48px;
+    background: #589102;
 }
 .search-box-mc input[type='text']::-webkit-input-placeholder {
     color: rgba(129,196,27,0.9);
@@ -602,7 +609,7 @@ header.site-header.sticky .search-box-mc input[type='text'] {
 }
 header.site-header.sticky .search-box-mc input[type='image'] {
     height: 48px;
-    top:-4px;
+    top:-2px;
     right: 34px;
 }
 /* =============================================================
@@ -692,6 +699,9 @@ footer.site-footer p {
     float: left;
     width: 30%;
 }
+.mobile-navigation {
+    display: none;
+}
 .main-navigation {
     position: relative;
 	display: block;
@@ -710,12 +720,15 @@ footer.site-footer p {
 }
 
 .main-navigation li {
+    clear: both;
     display: inline-block;
 	position: relative;
+    border-left: 1px solid #aaaaaa;
 }
 
-.main-navigation a {
+.main-navigation a,.mobile-navigation a {
 	display: block;
+    float: left;
     color: #ffffff;
     padding-left: 35px ;
     padding-right: 35px;
@@ -724,18 +737,19 @@ footer.site-footer p {
     font-size: 13px;
 	text-decoration: none;
     text-transform: lowercase;
-    border-width:0px 0px 0px 1px;
+    /*border-width:0px 0px 0px 1px;
     -moz-border-image:url("imgs/new-dots.png") 0 0 0 1 repeat repeat;
     -webkit-border-image:url("imgs/new-dots.png") 0 0 0 1 repeat repeat;
-    border-image:url("imgs/new-dots.png") 0 0 0 1 repeat repeat;
+    border-image:url("imgs/new-dots.png") 0 0 0 1 repeat repeat;*/
 }
-.main-navigation li.current-menu-item a {
-    background: #81c41b;
+.main-navigation li.current-menu-item a, .mobile-navigation li.current-menu-item a {
+    background: rgba(129, 196, 27, 0.9);
+
 
 }
 
 
-.main-navigation li.current-menu-item a:after {
+.main-navigation li.current-menu-item a:after, .mobile-navigation li.current-menu-item a:after {
     top: 100%;
     left: 50%;
     border: solid transparent;
@@ -962,12 +976,13 @@ HOME PAGE
 .item {
     display: block;
     float: left;
-    width: 33.2%;
+    width: 33.27%;
     padding: 1%;
-    border-width:1px 1px 1px 1px;
+    border: 1px solid #aaaaaa;
+/*    border-width:1px 1px 1px 1px;
     -moz-border-image:url("imgs/new-dots.png") 1 1 1 1 repeat repeat;
     -webkit-border-image:url("imgs/new-dots.png") 1 1 1 1 repeat repeat;
-    border-image:url("imgs/new-dots.png") 1 1 1 1 repeat repeat;
+    border-image:url("imgs/new-dots.png") 1 1 1 1 repeat repeat;*/
 
 }
 /* clear fix */
@@ -988,8 +1003,8 @@ HOME PAGE
         -moz-border-image: url("imgs/border-dots.png")5 5 5 5 repeat stretch;
         border-image: url("imgs/border-dots.png")5 5 5 5 repeat stretch; */
 /*}*/
-.featured-one article.item {width: 100%;padding: 0;border-top: 0;border-right: 0;}
-.featured-two article.item {width: 66.5%;}
+.featured-one article.item {width: 100%;padding: 0;border: none;}
+.featured-two article.item {width: 66.57%;}
 
 .featured-one div.post-cat-icon {
     display: none;
@@ -1141,7 +1156,7 @@ HOME PAGE
 #primary {
     float: left;
     width: 66%;
-    border-right: 1px dotted #aaaaaa;
+    border-right: 1px solid #aaaaaa;
 }
 #secondary {
     float: left;
@@ -1187,9 +1202,7 @@ p.full-image {
     display: block;
     float: left;
     padding: 10px;
-    border-top: 1px dotted #aaaaaa;
-    border-right: 1px dotted #aaaaaa;
-    border-bottom: 1px dotted #aaaaaa;
+    border: 1px solid #aaaaaa;
 }
 .before-image {
     position: absolute;
@@ -1233,7 +1246,7 @@ p.full-image {
     display: block;
     float: left;
     padding: 30px;
-    border-top: 1px dotted #aaaaaa;
+    border-top: 1px solid #aaaaaa;
 }
 .comments-area p {
     font-family: "ProximaNova-Bold",sans-serif;
@@ -1272,7 +1285,7 @@ p.full-image {
     padding-top: 25px;
 }
 .comment {
-    border-bottom: 1px dotted #aaaaaa;
+    border-bottom: 1px #aaaaaa;
 }
 .not-found {
     margin-top: 145px;
@@ -1298,7 +1311,7 @@ p.full-image {
     border: none;
     border-radius: 0;
     color: #ffffff;
-    border-right: 1px dotted #aaaaaa;
+    border-right: 1px solid #aaaaaa;
 }
 /*--------------------------------------------------------------
 10.2 Asides
@@ -1393,7 +1406,7 @@ p.full-image {
 .side-recent-post img {
     width: 100%;
     padding: 10px;
-    border-top: 1px dotted #aaaaaa;
+    border-top: 1px solid #aaaaaa;
 }
 
 .side-recent-post a {
@@ -1563,7 +1576,6 @@ only screen and (max-device-width : 900px){
     #menu-item-12 a {background-position: 44px -9px;}
     #menu-item-14 a {background-position: 19px -8px;}
     .search-box-btn{width: 100px;background-position: -8px -5px;}
-    .search-box-mc {width: 509px;}
     .search-box-mc input[type='text']{width: 421px;}
     .featured-callout span {font-size:100px;}
     .featured-one div.masonry-details {width: 50%;}
@@ -1583,21 +1595,25 @@ only screen and (max-device-width : 765px){
     .site-branding {
         width: 100%;
     }
-    .main-navigation {
+    #site-navigation {display: none;}
+    .showme{display: none;}
+    .mobile-navigation {
         display: none;
         position: absolute;
         top: 74px;
         left: 0;
         width: 100%;
-        height: 473px;
         z-index: 3;
     }
-    .main-navigation ul {
-        right: 0;
+    .mobile-navigation ul {
+        clear: both;
+        display: block;
+        float: left;
         width: 100%;
+        margin: 0;
         background: #73be02;
 	}
-    .main-navigation li {
+    .mobile-navigation li {
         display: block;
         float: left;
         width: 100%;
@@ -1607,15 +1623,15 @@ only screen and (max-device-width : 765px){
         background-image: none;
         border-image: none;
     }
-    .main-navigation a {
+    .mobile-navigation a {
         float: left;
         display: block;
         width: 100%;
         padding-left: 40px;
         background-image: none;
-        border-bottom: 1px dotted #aaaaaa;
+        border-bottom: 1px solid #aaaaaa;
     }
-    .main-navigation li.current-menu-item a {
+    .mobile-navigation li.current-menu-item a {
         background: #81c41b;
     }
 
@@ -1627,32 +1643,39 @@ only screen and (max-device-width : 765px){
         z-index: 2;
 
     }
-    .menu-toggle img {
-
+    .menu-toggle a {
+        display: block;
         width: 58px;
         height: 58px;
+        z-index: 2;
     }
-    .search-box-mc {
+    .burger {
+        background: url("imgs/hamburger.jpg") 0 0 no-repeat;
+    }
+    .x-me {
+
+        background: url("imgs/x-me.jpg") 0 0 no-repeat;
+    }
+    .mobile-search-box-mc {
+        position: relative;
         display: block;
-        position: absolute;
-        top: 292px;
-        left: 0;
+        float: left;
         width: 100%;
     }
-    .search-box-mc input[type='text']{
+    .mobile-search-box-mc input[type='text']{
         width: 100%;
         height: 73px;
         right: 0;
         padding-left: 25px;
         font-size: 16px;
     }
-    .search-box-mc input[type='image']{
+    .mobile-search-box-mc input[type='image']{
         top: 0;
         width: 67px;
         height: 73px;
-        border-left: 1px dotted #ffffff;
+        border-left: 1px solid #ffffff;
     }
-    .search-box-btn{display: none;}
+    .mobile-search-box-btn{display: none;}
     .featured-callout {
         top: 35px;
     }
