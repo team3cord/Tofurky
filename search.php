@@ -10,6 +10,7 @@ get_header(); ?>
 <!-- search -->
 	<section id="search-primary" class="content-area">
 		<main id="main" class="site-main" role="main">
+            <div id="masonry-loop" class="isotope">
 
 		<?php if ( have_posts() ) : ?>
 
@@ -31,6 +32,7 @@ get_header(); ?>
 
 			<?php endwhile; ?>
 
+            </div><!-- masonry loop -->
 			<?php hood_river_paging_nav(); ?>
 
 		<?php else : ?>

@@ -10,8 +10,9 @@
 get_header(); ?>
 
 <!-- archive -->
-	<section id="primary" class="content-area">
+	<section id="archive-primary" class="content-area">
 		<main id="main" class="site-main" role="main">
+            <div id="masonry-loop" class="isotope">
 
 		<?php if ( have_posts() ) : ?>
 
@@ -91,6 +92,7 @@ get_header(); ?>
 
 			<?php endwhile; ?>
 
+            </div><!-- masonry loop -->
 			<?php hood_river_paging_nav(); ?>
 
 		<?php else : ?>
@@ -102,5 +104,5 @@ get_header(); ?>
 		</main><!-- #main -->
 	</section><!-- #primary -->
 
-<?php get_sidebar(); ?>
+<//?php get_sidebar(); ?>
 <?php get_footer(); ?>

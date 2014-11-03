@@ -478,7 +478,7 @@ header.site-header{
     line-height: 108px;
     height: 108px;
     /* background: #81c41b;*/
-    background: rgba(115,190,2,0.9);
+    background: rgba(129,196,27,0.9);
     background-image: url("imgs/large-logo.png");
     background-repeat: no-repeat;
     background-position: 50px 1px;
@@ -645,6 +645,7 @@ footer.site-footer p {
 .footer-contact input[type='email'] {
     font-family: "ProximaNova Bold",sans-serif;
     font-weight: 700;
+    font-size: 15px;
     width: 303px;
     height: 40px;
     padding: 6px 0 0 20px;
@@ -653,13 +654,20 @@ footer.site-footer p {
     color: #4e4c4c;
 }
 .footer-privacy {
-    font-family: "ProximaNova-Regular",sans-serif;
-    font-weight: 400;
     display: inline-block;
     float: left;
     padding: 21px 0 0 25px;
     color: #8d8b8b;
 }
+.footer-privacy p {
+    font-family: "ProximaNova-Regular",sans-serif;
+    font-weight: 400;
+}
+.footer-privacy strong {
+    font-family: 'ProximaNova-Bold';
+    font-weight: 700;
+}
+
 .footer-social {
     float: right;
 }
@@ -732,8 +740,9 @@ footer.site-footer p {
     color: #ffffff;
     padding-left: 35px ;
     padding-right: 35px;
-    font-family: "MuseoSlab-300", serif;
+    font-family: "MuseoSlab-300Italic", serif;
     font-weight: 300;
+    font-style: italic;
     font-size: 13px;
 	text-decoration: none;
     text-transform: lowercase;
@@ -743,7 +752,7 @@ footer.site-footer p {
     border-image:url("imgs/new-dots.png") 0 0 0 1 repeat repeat;*/
 }
 .main-navigation li.current-menu-item a, .mobile-navigation li.current-menu-item a {
-    background: rgba(129, 196, 27, 0.9);
+    background: #81c41b;
 
 
 }
@@ -1093,8 +1102,9 @@ HOME PAGE
     background-image: url("imgs/icon-com.png");
     background-repeat: no-repeat;
     background-position: 1px 1px;
-    color: #bbbbbb;
-    font-family: "MuseoSlab-300",sans-serif;
+    color: #b7b7b7;
+    font-family: "ProximaNova-Regular";
+    font-size: 15px;
     font-weight: 300;
 }
 .tag-list {
@@ -1104,11 +1114,15 @@ HOME PAGE
     background-repeat: no-repeat;
     background-position: 1px 1px;
     color: #bbbbbb;
-    font-family: "MuseoSlab-300",sans-serif;
-    font-weight: 300;
 }
 .tag-list a {
-    color: #bbbbbb;
+    font-family: "ProximaNova-Regular";
+    font-size: 15px;
+    font-weight: 300;
+    color: #b7b7b7;
+}
+.tag-list a:hover {
+    color: #65a404;
 }
 
 
@@ -1663,6 +1677,7 @@ only screen and (max-device-width : 765px){
         width: 100%;
     }
     .mobile-search-box-mc input[type='text']{
+        display: block!important;
         width: 100%;
         height: 73px;
         right: 0;
@@ -1670,6 +1685,7 @@ only screen and (max-device-width : 765px){
         font-size: 16px;
     }
     .mobile-search-box-mc input[type='image']{
+        display: block!important;
         top: 0;
         width: 67px;
         height: 73px;
@@ -1712,6 +1728,14 @@ only screen and (max-device-width : 635px){
 }
 @media only screen and (max-width : 545px),
 only screen and (max-device-width : 545px){
+    .featured-one div.masonry-details {
+        position: relative;
+        top: 0;
+        left: 0;
+        display: block;
+        float: left;
+        width: 100%;
+    }
     footer.site-footer {
         padding: 0;
     }
