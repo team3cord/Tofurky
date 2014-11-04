@@ -456,6 +456,7 @@ STICKY HEADER
     background-image:url("imgs/small-search.png");
     width: 112px;
     height: 48px;
+    background-position: 0px -5px;
 }
 .search-box-btn a {
     display: block;
@@ -574,7 +575,10 @@ header.site-header.sticky .search-box-btn a {
     border: none;
     border-radius: 0;
     color: #ffffff;
-    border-right: 1px solid #aaaaaa;
+    border-width:0px 1px 0px 0px;
+    -moz-border-image:url("imgs/wt-dots.png") 0 0 0 0 repeat repeat;
+    -webkit-border-image:url("imgs/wt-dots.png") 0 1 0 0 repeat repeat;
+    border-image:url("imgs/wt-dots.png") 0 1 0 0 repeat repeat;
 }
 .mobile-search-box-mc input[type='image'], .search-box-mc input[type='image']{
    position: absolute;
@@ -585,7 +589,7 @@ header.site-header.sticky div.small-sticky {
     width: 111px;
     height: 48px;
     background-image: url("imgs/search-cond-open.jpg");
-    background-position: -6px -5px;
+    background-position: -1px -5px;
     background-repeat: no-repeat;
 // set animation
 -webkit-transition: all 1.0s ease;
