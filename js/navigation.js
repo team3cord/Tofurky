@@ -10,7 +10,7 @@ jQuery(function($){
         var searchBtn = $('.search-box-btn');
         var searchInput = $('.search-box-mc input[type="text"]');
         var searchImage =$('.search-box-mc input[type="image"]');
-        searchBox.on('mouseenter', function(e){
+        searchBtn.on('click', function(e){
             e.preventDefault();
             searchImage.removeClass('nomore');
             searchInput.removeClass('nomore').animate({
