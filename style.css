@@ -740,7 +740,10 @@ footer.site-footer p {
     clear: both;
     display: inline-block;
 	position: relative;
-    border-left: 1px solid #aaaaaa;
+    /*background-image: linear-gradient(to bottom, #333 20%, rgba(255, 255, 255, 0) 0%);
+    background-position: left;
+    background-size: 1px 5px;
+    background-repeat: repeat-y;*/
 }
 
 .main-navigation a,.mobile-navigation a {
@@ -755,19 +758,20 @@ footer.site-footer p {
     font-size: 13px;
 	text-decoration: none;
     text-transform: lowercase;
-    /*border-width:0px 0px 0px 1px;
+    border-width:0px 0px 0px 1px;
     -moz-border-image:url("imgs/new-dots.png") 0 0 0 1 repeat repeat;
     -webkit-border-image:url("imgs/new-dots.png") 0 0 0 1 repeat repeat;
-    border-image:url("imgs/new-dots.png") 0 0 0 1 repeat repeat;*/
+    border-image:url("imgs/new-dots.png") 0 0 0 1 repeat repeat;
 }
-.main-navigation li.current-menu-item a, .mobile-navigation li.current-menu-item a {
+.main-navigation li.current-menu-item a, .mobile-navigation li.current-menu-item a, .main-navigation li a:hover, .mobile-navigation li a:hover {
     background: #81c41b;
 
 
 }
 
 
-.main-navigation li.current-menu-item a:after, .mobile-navigation li.current-menu-item a:after {
+.main-navigation li.current-menu-item a:after, .mobile-navigation li.current-menu-item a:after,
+.main-navigation li a:hover:after, .mobile-navigation li a:hover:after {
     top: 100%;
     left: 50%;
     border: solid transparent;
@@ -996,7 +1000,6 @@ HOME PAGE
     float: left;
     width: 33.27%;
     padding: 1%;
-    border: 1px solid #aaaaaa;
 /*    border-width:1px 1px 1px 1px;
     -moz-border-image:url("imgs/new-dots.png") 1 1 1 1 repeat repeat;
     -webkit-border-image:url("imgs/new-dots.png") 1 1 1 1 repeat repeat;
@@ -1194,7 +1197,10 @@ HOME PAGE
 #primary {
     float: left;
     width: 66%;
-    border-right: 1px solid #aaaaaa;
+    border-width:0px 1px 0px 0px;
+    -moz-border-image:url("imgs/new-dots.png") 0 1 0 0 repeat repeat;
+    -webkit-border-image:url("imgs/new-dots.png") 0 1 0 0 repeat repeat;
+    border-image:url("imgs/new-dots.png") 0 1 0 0 repeat repeat;
 }
 #secondary {
     float: left;
@@ -1240,7 +1246,6 @@ p.full-image {
     display: block;
     float: left;
     padding: 10px;
-    border: 1px solid #aaaaaa;
 }
 .before-image {
     position: absolute;
@@ -1284,7 +1289,10 @@ p.full-image {
     display: block;
     float: left;
     padding: 30px;
-    border-top: 1px solid #aaaaaa;
+    border-width:1px 0px 0px 0px;
+    -moz-border-image:url("imgs/new-dots.png") 1 0 0 0 repeat repeat;
+    -webkit-border-image:url("imgs/new-dots.png") 1 0 0 0 repeat repeat;
+    border-image:url("imgs/new-dots.png") 1 0 0 0 repeat repeat;
 }
 .comments-area p {
     font-family: "ProximaNova-Bold",sans-serif;
@@ -1447,7 +1455,6 @@ p.full-image {
 .side-recent-post img {
     width: 100%;
     padding: 10px;
-    border-top: 1px solid #aaaaaa;
 }
 
 .side-recent-post a {
@@ -1797,3 +1804,5 @@ only screen and (max-device-width : 399px){
 @media screen and (max-width: 600px) {
 
 }
+
+

@@ -18,10 +18,7 @@
 	</header><!-- .entry-header -->
 
 	<div class="entry-content-single">
-        <div class="masonry-thumbnail">
-            <a href="<?php echo esc_url( home_url( '/' ) ); ?>category/<?php  echo $cat_name ?>"><div class="post-cat-icon <?php  echo $cat_name ?>"></div></a>
-            <?php the_post_thumbnail('masonry-thumb'); ?>
-        </div><!--.masonry-thumbnail-->
+
 		<?php the_content(); ?>
 
 
