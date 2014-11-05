@@ -30,7 +30,7 @@ jQuery(function($){
             }, 500, function(){
                 searchBtn.removeClass('nomore').addClass('showme');
                 searchImage.addClass('nomore');
-                searchInput.addClass('nomore');
+                searchInput.addClass('nomore').val('');
             });
         });
 
