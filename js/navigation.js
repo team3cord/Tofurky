@@ -56,6 +56,13 @@ jQuery(function($){
                 $(feature).eq(2).addClass('featured-three');
         }
         featuredImage('.sticky');
+        var emailForm = ('.side-email input[type="email"]');
+        $(emailForm).on('focus', function(){
+            $('.email-priv').removeClass('nomore');
+        })
+        $(emailForm).on('blur', function(){
+            $('.email-priv').addClass('nomore');
+        })
         $('li.menu-item a').wrapInner('<span class="hide-mc"></span>');
         var mobileMenu = $('#mobile-men');
         mobileMenu.on('click', function(e){

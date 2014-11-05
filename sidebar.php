@@ -22,7 +22,7 @@
         <!--<li class="side-inst"><a href="http://instagram.com/tofurky" target="_blank"></a></li>-->
             <li class="side-fb"><a href="https://www.facebook.com/TofurkyFan" target="_blank"></a></li>
             <li class="side-twt"><a href="https://twitter.com/@tofurky" target="_blank"></a></li>
-            <li class="side-rss"><a href="#" target="_blank"></a></li>
+            <li class="side-rss"><a href="http://blog.tofurky.com/rss" target="_blank"></a></li>
         </ul>
     </div>
     <div class="most-recent">

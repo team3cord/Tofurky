@@ -1154,7 +1154,7 @@ HOME PAGE
     text-decoration: none;
     color: #403e3e;
 }
-.masonry-details a:hover {
+.masonry-details a:hover, span.tag-list a:hover {
     color: #589102;
 }
 .com-tag {
@@ -1318,6 +1318,12 @@ p.full-image {
     float: left;
     padding: 30px;
 }
+.entry-footer .tag-list {
+    background-image: url("imgs/icon-tag-drk.png");
+} 
+#comments .comment-num {
+    background-image: url("imgs/icon-com-drk.png");
+}
 .entry-footer .tag-list a, .comments-area span {
     font-family: "ProximaNova-Bold",sans-serif;
     font-weight: 700;
@@ -1327,7 +1333,7 @@ p.full-image {
 .comments-area {
     display: block;
     float: left;
-    padding: 30px;
+    padding: 30px 30px 50px 30px;
     border-width:1px 0px 0px 0px;
     -moz-border-image:url("imgs/new-dots.png") 1 0 0 0 repeat repeat;
     -webkit-border-image:url("imgs/new-dots.png") 1 0 0 0 repeat repeat;
@@ -1352,25 +1358,58 @@ p.full-image {
     padding: 6px;
     box-shadow: none;
 }
+.comment-respond {
+    margin-top: 30px;
+}
+#reply-title, .comments-title {
+    font-family: "ProximaNova-Bold",sans-serif;
+    font-size: 700;
+    color: #585757;
+}
+#commentform {
+    padding: 70px;
+}
+.comment-list li {
+    margin-top: 30px;
+    padding: 20px 0 ;
+    border-width: 1px 0px 0px 0px;
+     -moz-border-image:url("imgs/new-dots.png") 1 0 0 0 repeat repeat;
+    -webkit-border-image:url("imgs/new-dots.png") 1 0 0 0 repeat repeat;
+    border-image:url("imgs/new-dots.png") 1 0 0 0 repeat repeat;
+}
 .vcard {
     float: left;
-    width: 30%;
+    width: 22%;
 }
 .vcard img {
     height: 70px;
     width: 70px;
 }
-.fn, .says {
+.fn {
     display: inline-block;
-    margin-bottom: 15px;
+    margin: 0 0 15px 25px;
+    font-family: 'ProximaNova-Bold',sans-serif;
+    font-weight: 700;
+    color: #585757;
+}
+.says {
+    display: none;
 }
 .comment-metadata {
     float: left;
     width: 70%;
-    padding-top: 25px;
+    padding-top: 53px;
 }
-.comment {
-    border-bottom: 1px #aaaaaa;
+.comment-content {
+    display: block;
+    float: left;
+    width: 100%;
+    padding-left: 100px;
+}
+.reply {
+    display: block;
+    float: left;
+    width: 100%;
 }
 .not-found, #archive-primary {
     margin-top: 240px;
@@ -1444,9 +1483,8 @@ p.full-image {
     font-family: "ProximaNova-Bold",sans-serif;
     font-weight: 700;
      font-size: 14px;
-     border: 1px solid #aaaaaa;
      border-radius: 10px;
-     color: #ffffff;
+     color: #585757;
  }
 
 .side-email input[type='email']::-webkit-input-placeholder {
@@ -1469,6 +1507,24 @@ p.full-image {
     font-weight: 300;
     font-size: 22px;
     font-style: italic;
+}
+div.wpcf7-mail-sent-ok {
+    background: #ffffff;
+}
+form.wpcf7-form{
+    position: relative;
+}
+span.email-priv {
+    position: absolute;
+    top: 48px;
+    font-family: "ProximaNova-Regular",sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #73be02;
+}
+span.email-priv strong {
+    font-family: "ProximaNova-Bold", sans-serif;
+    font-weight: 700;
 }
 .side-email ul {
     margin: 0;

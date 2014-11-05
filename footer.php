@@ -20,7 +20,7 @@
                 <!--<li><a class="inst-wt" href="http://instagram.com/tofurky" target="_blank"></a></li>-->
                 <li><a class="fb-wt" href="https://www.facebook.com/TofurkyFan" target="_blank"></a></li>
                 <li><a class="twt-wt" href="https://twitter.com/@tofurky" target="_blank"></a></li>
-                <li><a class="rss-wt" href="#"></a></li>
+                <li><a class="rss-wt" href="http://blog.tofurky.com/rss"></a></li>
             </ul>
         </div>
 
