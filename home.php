@@ -15,6 +15,8 @@ get_header(); ?>
                 <div class="featured-callout">
                     <span><?php echo get_field('main_featured_callout', 5); ?></span>
                 </div>
+                <div class="dotted-horz"></div>
+
 
                 <?php if ( have_posts() ) : ?>
                 <?php /* Start the Loop */ ?>

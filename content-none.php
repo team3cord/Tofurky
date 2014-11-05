@@ -14,7 +14,7 @@
 		<h1 class="page-title"><?php _e( 'Nothing Found', 'hood-river' ); ?></h1>
 	</header><!-- .page-header -->
 
-	<div class="page-content">
+	<div class="page-content show-search">
 		<?php if ( is_home() && current_user_can( 'publish_posts' ) ) : ?>
 
 			<p><?php printf( __( 'Ready to publish your first post? <a href="%1$s">Get started here</a>.', 'hood-river' ), esc_url( admin_url( 'post-new.php' ) ) ); ?></p>
@@ -22,7 +22,7 @@
 		<?php elseif ( is_search() ) : ?>
 
 			<p><?php _e( 'Sorry, but nothing matched your search terms. Please try again with some different keywords.', 'hood-river' ); ?></p>
-			<?php get_search_form(); ?>
+			<?php get_search_form('searhform'); ?>
 
 		<?php else : ?>
 

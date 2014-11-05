@@ -39,8 +39,10 @@
                     <?php the_post_thumbnail(); ?>
                         <h5><?php the_title(); ?></h5>
                     </a>
+                    <div class="com-tag">
                      <span class="comment-num"><?php echo comments_number(); ?></span>
                      <span class="tag-list"> <?php echo get_the_tag_list(' ',', ',' '); ?></span>
+                    </div>
 
                 </div>
             <?php endforeach; ?>

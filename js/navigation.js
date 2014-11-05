@@ -17,7 +17,7 @@ jQuery(function($){
                 right: "111",
                 width: "501",
                 padding: "0 0 0 85"
-            }, 1000, function(){
+            }, 500, function(){
                 searchBtn.removeClass('showme').addClass('nomore');
             });
         });
@@ -27,7 +27,7 @@ jQuery(function($){
                 right: "0",
                 width: "0",
                 padding: "0"
-            }, 1000, function(){
+            }, 500, function(){
                 searchBtn.removeClass('nomore').addClass('showme');
                 searchImage.addClass('nomore');
                 searchInput.addClass('nomore');

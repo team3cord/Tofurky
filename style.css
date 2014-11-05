@@ -595,6 +595,9 @@ header.site-header.sticky div.small-sticky {
 -webkit-transition: all 1.0s ease;
     transition: all 1.0s ease;
 }
+.show-search div.small-sticky input {
+    display: block;
+}
 .search-box-mc input[type='text']::-webkit-input-placeholder {
     color: rgba(129,196,27,0.9);
 }
@@ -621,6 +624,9 @@ header.site-header.sticky .search-box-mc input[type='image'] {
     top:-2px;
     right: 34px;
     opacity: 0.00001;
+}
+#cat-primary {
+    margin-top: 108px;
 }
 /* =============================================================
 FOOTER
@@ -1043,8 +1049,21 @@ HOME PAGE
 .featured-callout {
     position: absolute;
     top: 5%;
-    left: 11%;
+    left: 9%;
     z-index: 1;
+
+
+}
+.featured-callout p {
+    margin-bottom: 0;
+}
+.dotted-horz {
+    width: 100%;
+    height: 3px;
+    border-width:0px 0px 1px 0px;
+    -moz-border-image:url("imgs/wt-dots.png") 0 0 1 0 repeat repeat;
+    -webkit-border-image:url("imgs/wt-dots.png") 0 0 1 0 repeat repeat;
+    border-image:url("imgs/wt-dots.png") 0 0 1 0 repeat repeat;
 }
 .featured-callout span {
     font-family: "MuseoSlab-100Italic", serif;
@@ -1056,7 +1075,7 @@ HOME PAGE
 .featured-one div.masonry-details {
     position: absolute;
     top: 54%;
-    left: 11%;
+    left: 9%;
     width: 32%;
     z-index: 1;
 }
@@ -1065,6 +1084,7 @@ HOME PAGE
     font-family: "MuseoSlab-300",serif;
     font-weight: 300;
     font-size: 34px;
+    line-height: 35px;
 
 }
 
@@ -1125,6 +1145,10 @@ HOME PAGE
     font-weight: 300;
     font-size: 24px;
     margin-bottom: 25px;
+    line-height: 27px;
+}
+.masonry-details {
+    margin-top: 20px;
 }
 .masonry-details a {
     text-decoration: none;
@@ -1132,6 +1156,9 @@ HOME PAGE
 }
 .masonry-details a:hover {
     color: #589102;
+}
+.com-tag {
+    margin-top: 20px;
 }
 .comment-num {
     display: inline-block;
@@ -1219,13 +1246,14 @@ HOME PAGE
 }
 .entry-header {
     float: left;
-    padding: 130px 40px 30px 40px;
+    padding: 130px 40px 20px 40px;
 }
 .entry-header h1 {
     font-family: "MuseoSlab-300",serif;
     font-weight: 300;
     font-size: 44px;
     font-weight: normal;
+    line-height: 51px;
     color: #73be02;
 
 }
@@ -1251,6 +1279,7 @@ p.full-image {
     float: left;
     padding: 0;
     width: 100%;
+    margin-top: 10px;
 }
 .entry-content-single img {
     display: block;
@@ -1343,15 +1372,20 @@ p.full-image {
 .comment {
     border-bottom: 1px #aaaaaa;
 }
-.not-found {
-    margin-top: 145px;
+.not-found, #archive-primary {
+    margin-top: 240px;
     padding-left: 25px;
+    float: left;
 }
-.not-found h1 {
+.not-found header, #archive-primary header {
+    width: 65%;
+}
+.not-found h1, #archive-primary h1 {
     font-family: "MuseoSlab-300",serif;
     font-weight: 300;
     font-size: 44px;
-    color: #73be02;
+    color: #4e4c4c;
+    line-height: 51px;
 }
 .not-found input[type='text']{
     display: block;
@@ -1359,7 +1393,7 @@ p.full-image {
     height: 114px;
     width: 501px;
     padding-left: 85px;
-    background-color: #589102;
+    background-color: #efefef;
     font-family: "MuseoSlab-300Italic", serif;
     font-weight: 300;
     font-style: italic;
@@ -1368,6 +1402,9 @@ p.full-image {
     border-radius: 0;
     color: #ffffff;
     border-right: 1px solid #aaaaaa;
+}
+.show-search {
+    min-height: 385px;
 }
 /*--------------------------------------------------------------
 10.2 Asides
@@ -1479,8 +1516,9 @@ p.full-image {
     padding: 0 30px 15px 30px;
 }
 
-.side-recent-post .comment-num {
+.side-recent-post .com-tag {
     margin-left: 30px;
+    margin-top: 0;
 }
 
 .side-recent-post .tag-list a {
@@ -1752,6 +1790,9 @@ only screen and (max-device-width : 765px){
     .item {width: 100%;}
     .entry-header{
         padding-top: 10px;
+    }
+    #cat-primary {
+        margin-top: 20px;
     }
 }
 

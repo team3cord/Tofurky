@@ -11,8 +11,10 @@
         <?php endif; ?>
         <div class="masonry-details">
             <h5><a href="<?php the_permalink(' ') ?>" title="<?php the_title(); ?>"><span class="masonry-post-title"> <?php the_title(); ?></span></a></h5>
-            <span class="comment-num"><?php echo comments_number(); ?></span>
-            <span class="tag-list"><?php echo get_the_tag_list(' ',', ',' '); ?></span>
+            <div class="com-tag">
+                <span class="comment-num"><?php echo comments_number(); ?></span>
+                <span class="tag-list"><?php echo get_the_tag_list(' ',', ',' '); ?></span>
+            </div>
             <!-- <div class="masonry-post-excerpt">
                 <//?php the_excerpt(); ?>
             </div><!--.masonry-post-excerpt-->
