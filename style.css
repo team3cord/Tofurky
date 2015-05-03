@@ -673,6 +673,9 @@ footer.site-footer p {
     border-radius: 5px;
     color: #4e4c4c;
 }
+.footer-contact input[type='submit'] {
+    display: none;
+}
 .footer-privacy {
     display: inline-block;
     float: left;
@@ -686,6 +689,12 @@ footer.site-footer p {
 .footer-privacy strong {
     font-family: 'ProximaNova-Bold';
     font-weight: 700;
+}
+.footer-privacy a {
+    text-decoration: none;
+    font-family: 'ProximaNova-Bold',sans-serif;
+    font-weight: 700;
+    color: #8d8b8b;
 }
 
 .footer-social {
@@ -1539,6 +1548,9 @@ p.full-image {
 .side-email  input[type='email']:-ms-input-placeholder {
     color: rgba(78,76,76,0.9);
 }
+.side-email input[type='submit']{
+    display: none;
+}
 .side-email span {
     font-family: "MuseoSlab-300Italic",serif;
     font-weight: 300;
@@ -1548,12 +1560,13 @@ p.full-image {
 div.wpcf7-mail-sent-ok {
     background: #ffffff;
 }
-form.wpcf7-form{
+form#mc4wp-form-1 {
     position: relative;
 }
 span.email-priv {
     position: absolute;
     top: 48px;
+    left: 1px;
     font-family: "ProximaNova-Regular",sans-serif;
     font-weight: 400;
     font-size: 14px;
@@ -1564,7 +1577,7 @@ span.email-priv strong {
     font-weight: 700;
 }
 .side-email ul {
-    margin: 0;
+    margin: 16px 0 0 0;
     padding: 0;
 }
 .side-email li {
@@ -1897,6 +1910,29 @@ only screen and (max-device-width : 765px){
     }
     #cat-primary {
         margin-top: 20px;
+    }
+    .comments-area {
+        padding: 30px 0 50px 0;
+    }
+    #commentform {
+        padding: 2px;
+    }
+    .not-found, #archive-primary, #search-primary {
+        margin-top: 40px;
+        padding-left: 2px;
+    }
+    .entry-content-single {
+        width: 100%;
+    }
+    .entry-content-single p {
+        padding: 5px 0;
+    }
+    .entry-content-single img {
+        padding: 0;
+        max-width: 97%;
+    }
+    .entry-content-single img.alignright, .entry-content-single img.alignleft , .entry-content-single img.aligncenter {
+        margin: 0;
     }
 }
 

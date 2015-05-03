@@ -49,15 +49,16 @@ jQuery(function($){
 
         });
 
-        $('.entry-content-single img').parent('p').addClass('full-image');
+
         function featuredImage(feature){
                 $(feature).eq(0).addClass('featured-one');
                 $(feature).eq(1).addClass('featured-two');
                 $(feature).eq(2).addClass('featured-three');
         }
         featuredImage('.sticky');
-        var emailForm = ('.side-email input[type="email"]');
+        var emailForm = ('input#mc4wp_email');
         $(emailForm).on('focus', function(){
+
             $('.email-priv').removeClass('nomore');
         })
         $(emailForm).on('blur', function(){
@@ -67,7 +68,7 @@ jQuery(function($){
         var mobileMenu = $('#mobile-men');
         mobileMenu.on('click', function(e){
             e.preventDefault();
-            $('.mobile-navigation').slideToggle(1000, function(){
+            $('.mobile-navigation').slideToggle(200, function(){
                 // Animation complete.
                 if ((mobileMenu).hasClass('burger')){
                     mobileMenu.removeClass('burger').addClass('x-me');

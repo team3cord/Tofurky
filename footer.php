@@ -51,7 +51,6 @@
             if (wWidth >= 765){
                 $('.main-navigation').addClass('showme'); // Resizing browser from mobile nav
             } else {
-                console.log('shit');
                 $('header.site-header').removeClass('sticky');
             }
             console.log(wWidth);
