@@ -246,6 +246,30 @@ small {
 big {
 	font-size: 125%;
 }
+@font-face {
+    font-family: 'TrueNorthBlack-Regular';
+    src: url('fonts/true-north-black/webfonts/true-north-black.eot');
+    src: url('fonts/true-north-black/webfonts/true-north-black.eot?#iefix') format('embedded-opentype'),
+    url('fonts/true-north-black/webfonts/true-north-black.woff2') format('woff2'),
+    url('fonts/true-north-black/webfonts/true-north-black.woff') format('woff'),
+    url('fonts/true-north-black/webfonts/true-north-black.ttf') format('truetype'),
+    url('fonts/true-north-black/webfonts/true-north-black.svg#youworkforthem') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'TrueNorthRoughBlack-Regular';
+    src: url('fonts/true-north-rough-black/webfonts/true-north-rough-black.eot');
+    src: url('fonts/true-north-rough-black/webfonts/true-north-rough-black.eot?#iefix') format('embedded-opentype'),
+    url('fonts/true-north-rough-black/webfonts/true-north-rough-black.woff2') format('woff2'),
+    url('fonts/true-north-rough-black/webfonts/true-north-rough-black.woff') format('woff'),
+    url('fonts/true-north-rough-black/webfonts/true-north-rough-black.ttf') format('truetype'),
+    url('fonts/true-north-rough-black/webfonts/true-north-rough-black.svg#youworkforthem') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
 
 /*--------------------------------------------------------------
 3.0 Elements
@@ -443,11 +467,11 @@ STICKY HEADER
     position: absolute;
     top: 0;
     right: 0;
-    width: 108px;
-    height: 108px;
-    background-image: url("imgs/big-search.png");
+    width: 112px;
+    height: 114px;
+    background-image: url("imgs/big-search2.png");
     background-repeat: no-repeat;
-    background-position: -4px -5px;
+   /* background-position: -4px -5px;*/
 // set animation
 -webkit-transition: all 0.4s ease;
     transition: all 0.4s ease;
@@ -476,8 +500,8 @@ STICKY HEADER
 header.site-header{
     position: fixed;
     width: 100%;
-    line-height: 108px;
-    height: 108px;
+    line-height: 114px;
+    height: 114px;
     /* background: #81c41b;*/
     background: rgba(129,196,27,0.9);
   /*  background-image: url("imgs/large-logo2.png");*/
@@ -493,7 +517,7 @@ header.site-header{
 .logo-overlay {
    position: absolute;
     top: 0;
-    left: 40px;
+    left: 69px;
     opacity: 1;
     -webkit-transition: opacity .5s ease-in-out;
     -moz-transition: opacity .5s ease-in-out;
@@ -520,7 +544,7 @@ header.site-header.sticky nav.main-navigation {
     width: 40.3%;
 }
 header.site-header.sticky nav.main-navigation ul {
-    width: 466px;
+    width: 448px;
 }
 header.site-header.sticky nav.main-navigation a{
     height: 48px;
@@ -530,23 +554,23 @@ header.site-header.sticky nav.main-navigation span.hide-mc{
     display: none;
 }
 header.site-header.sticky #menu-item-11 a {
-    background-image: url("imgs/small-icon-sprite.png");
+    background-image: url("imgs/icon-sm-sprite.png");
     background-position: -5px -5px;
     width: 112px;
 }
 header.site-header.sticky #menu-item-10 a {
-    background-image: url("imgs/small-icon-sprite.png");
+    background-image: url("imgs/icon-sm-sprite.png");
     background-position: -136px -6px;
     width: 112px;
 }
 header.site-header.sticky #menu-item-12 a {
-    background-image: url("imgs/small-icon-sprite.png");
+    background-image: url("imgs/icon-sm-sprite.png");
     background-position: -296px -7px;
     width: 112px;
 }
 header.site-header.sticky #menu-item-14 a {
-    background-image: url("imgs/small-icon-sprite.png");
-    background-position: -442px -7px;
+    background-image: url("imgs/icon-sm-sprite.png");
+    background-position: -437px -7px;
     width: 112px;
 }
 header.site-header.sticky .search-box-btn a {
@@ -562,7 +586,7 @@ header.site-header.sticky .search-box-btn a {
     position: absolute;
     top: 0;
     right: 0;
-    height:108px;
+    height:114px;
     z-index: 2;
 // set animation
 -webkit-transition: all 1.0s ease;
@@ -580,13 +604,13 @@ header.site-header.sticky .search-box-btn a {
 .mobile-search-box-mc input[type='text'], .search-box-mc input[type='text']{
     position: absolute;
     top:0;
-    height: 108px;
+    height: 114px;
     /* padding-left: 85px;*/
     background-color: #589102;
-    font-family: "MuseoSlab-300Italic", serif;
+    font-family: "TrueNorthRoughBlack-Regular", serif;
     font-weight: 300;
     font-style: italic;
-    font-size: 24px;
+    font-size: 29px;
     border: none;
     border-radius: 0;
     color: #ffffff;
@@ -597,7 +621,7 @@ header.site-header.sticky .search-box-btn a {
 }
 .mobile-search-box-mc input[type='image'], .search-box-mc input[type='image']{
    position: absolute;
-    top: -6px;
+    top: 0px;
     right: 0;
 }
 header.site-header.sticky div.small-sticky {
@@ -606,6 +630,13 @@ header.site-header.sticky div.small-sticky {
     background-image: url("imgs/search-cond-open.jpg");
     background-position: -1px -5px;
     background-repeat: no-repeat;
+    border-bottom-style: solid;
+    border-width: 0 0 0 2px;
+    border-image-slice: 0 0 0 20;
+    border-image-width: 20px 20px 20px 20px;
+    border-image-outset: 20px 0px 21px 0px;
+    border-image-repeat: stretch stretch;
+    border-image-source: url("imgs/nav-line-sprite.png");
 // set animation
 -webkit-transition: all 1.0s ease;
     transition: all 1.0s ease;
@@ -772,8 +803,8 @@ footer.site-footer p {
 .main-navigation ul {
     position: absolute;
     top: 0;
-    right: 97px;
-    width: 511px;
+    right: 112px;
+    width: 512px;
     font-size: 0;
 	list-style: none;
 	margin: 0;
@@ -795,19 +826,27 @@ footer.site-footer p {
 	display: block;
     float: left;
     color: #ffffff;
-    padding-left: 35px ;
-    padding-right: 35px;
-    font-family: "MuseoSlab-300Italic", serif;
+    height: 114px;
+    padding: 35px 30px 0 30px;
+    font-family: "TrueNorthBlack-Regular", sans-serif;
     font-weight: 300;
     font-style: italic;
     font-size: 13px;
 	text-decoration: none;
     text-transform: lowercase;
+    border-bottom-style: solid;
+    border-width: 0 0 0 2px;
+    border-image-slice: 0 0 0 20;
+    border-image-width: 20px 20px 20px 20px;
+    border-image-outset: 20px 0px 21px 0px;
+    border-image-repeat: stretch stretch;
+    border-image-source: url("imgs/nav-line-sprite.png");
+    /*
     border-width:0px 0px 0px 2px;
     border-style: solid;
     -moz-border-image:url("imgs/new-dots.png") 0 0 0 4 repeat repeat;
     -webkit-border-image:url("imgs/new-dots.png") 0 0 0 4 repeat repeat;
-    border-image:url("imgs/new-dots.png") 0 0 0 4 repeat repeat;
+    border-image:url("imgs/new-dots.png") 0 0 0 4 repeat repeat;*/
 }
 .main-navigation li.current-menu-item a, .mobile-navigation li.current-menu-item a, .main-navigation li a:hover, .mobile-navigation li a:hover {
     background: #81c41b;
@@ -837,25 +876,25 @@ footer.site-footer p {
 #mc-search {border: none;}
 
 #menu-item-11 a {
-    background-image: url("imgs/reci-icon.png");
+    background-image: url("imgs/icon-lrg-sprite.png");
     background-repeat: no-repeat;
-    background-position: 34px -9px;
+    background-position: -27px 0px;
 }
 #menu-item-10 a {
-    background-image: url("imgs/life-icon.png");
+    background-image: url("imgs/icon-lrg-sprite.png");
     background-repeat: no-repeat;
-    background-position: 34px -6px;
+    background-position: -156px 0px;
 }
 
 #menu-item-12 a {
-    background-image: url("imgs/sus-icon.png");
+    background-image: url("imgs/icon-lrg-sprite.png");
     background-repeat: no-repeat;
-    background-position: 50px -9px;
+    background-position: -296px 0px;
 }
 #menu-item-14 a {
-    background-image: url("imgs/events-icon.png");
+    background-image: url("imgs/icon-lrg-sprite.png");
     background-repeat: no-repeat;
-    background-position: 29px -8px;
+    background-position: -468px 0px;
 }
 
 .main-navigation ul ul {
@@ -1784,25 +1823,28 @@ only screen and (max-device-width : 970px){
     .not-found input[type='text']{width: 370px;}
     .side-email  {padding-left: 10px}
     .side-email input[type='email']{width: 225px}
+    .logo-overlay {left: 54px;}
+
 
 }
 
 @media only screen and (max-width : 900px),
 only screen and (max-device-width : 900px){
     header.site-header {background-position: 20px 1px;}
+    .logo-overlay {left: 35px;}
     .main-navigation ul {
         width: 407px;
         right: 100px;
     }
     .main-navigation a {
-        padding-left: 21px;
-        padding-right: 21px;
+        padding-left: 16px;
+        padding-right: 16px;
     }
-    #menu-item-11 a {background-position: 26px -9px;}
-    #menu-item-10 a {background-position: 21px -6px;}
-    #menu-item-12 a {background-position: 44px -9px;}
-    #menu-item-14 a {background-position: 19px -8px;}
-    .search-box-btn{width: 100px;background-position: -8px -5px;}
+    #menu-item-11 a {background-position: -40px 0px;}
+    #menu-item-10 a {background-position: -166px 0px;}
+    #menu-item-12 a {background-position: -310px 0px;}
+    #menu-item-14 a {background-position: -481px 0px;}
+    .search-box-btn{width: 100px;background-position: -6px 0px;}
     .search-box-mc input[type='text']{width: 421px;}
     .featured-callout {top:100px;}
     .dotted-horz {top: 250px;}
@@ -1821,6 +1863,7 @@ only screen and (max-device-width : 765px){
         background-image: url("imgs/mobile-logo.png");
         background-position: 1px 1px;
     }
+    .logo-overlay{display: none;}
     .site-branding {
         width: 100%;
     }
@@ -1868,9 +1911,11 @@ only screen and (max-device-width : 765px){
         float: left;
         display: block;
         width: 100%;
-        padding-left: 40px;
+        height: 80px;
+        padding:10px 0 10px 40px;
         background-image: none;
         border-bottom: 1px solid #aaaaaa;
+        border-image-slice: 0;
     }
     .mobile-navigation li.current-menu-item a {
         background: #81c41b;
@@ -1923,7 +1968,10 @@ only screen and (max-device-width : 765px){
     .featured-two article.item {
         width: 100%;
     }
-
+    .main-navigation li.current-menu-item a:after, .mobile-navigation li.current-menu-item a:after,
+    .main-navigation li a:hover:after, .mobile-navigation li a:hover:after {
+        border: none;
+    }
 
     #primary,#secondary {width: 100%;border-image: none;}
     .item {width: 100%;}

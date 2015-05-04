@@ -15,8 +15,8 @@ jQuery(function($){
             searchImage.removeClass('nomore');
             searchInput.removeClass('nomore').animate({
                 right: "111",
-                width: "501",
-                padding: "0 0 0 85"
+                width: "541",
+                padding: "0 0 0 45"
             }, 500, function(){
                 searchBtn.removeClass('showme').addClass('nomore');
             });
