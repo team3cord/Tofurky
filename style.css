@@ -1273,6 +1273,7 @@ body.paged div.dotted-horz, body.paged div.featured-callout {
     background: #ffffff;
 }
 #primary {
+    display: block;
     float: left;
     width: 66%;
     border-width:0px 2px 0px 0px;
@@ -1281,6 +1282,7 @@ body.paged div.dotted-horz, body.paged div.featured-callout {
     border-image:url("imgs/new-dots.png") 0 4 0 0 repeat repeat;
 }
 #secondary {
+    display: block;
     float: left;
     width: 33.9%;
     padding-top: 125px;
@@ -1299,6 +1301,7 @@ body.paged div.dotted-horz, body.paged div.featured-callout {
 
 }
 .entry-content-single {
+    max-width: 100%;
     display: block;
     float: left;
     position: relative;
@@ -1326,6 +1329,10 @@ p.full-image {
     display: block;
     float: left;
     padding: 10px;
+}
+.entry-content-single img.size-full:first-of-type{
+    width: 98%;
+    padding: 1%;
 }
 .before-image {
     position: absolute;
