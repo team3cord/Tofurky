@@ -38,10 +38,12 @@ jQuery(function($){
             if ($('header.site-header').css('position') == 'fixed'){
                 if ($(this).scrollTop() > 1){
                     $('header.site-header').addClass("sticky");
+                    $('.logo-overlay').addClass("sticky");
                     $('.search-box-btn').addClass('search-icon-sm');
                 }
                 else{
                     $('header.site-header').removeClass("sticky");
+                    $('.logo-overlay').removeClass("sticky");
                     $('.search-box-btn').removeClass('search-icon-sm');
                 }
             }

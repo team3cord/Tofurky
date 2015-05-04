@@ -83,6 +83,7 @@
 		<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
             <div class="site-branding">
                 <h1 class="site-title"><?php bloginfo( 'name' ); ?></h1>
+                <img class="logo-overlay" src="<?php echo site_url('/wp-content/themes/hood-river/imgs/large-logo2.png')?>">
             </div>
         </a>
 
