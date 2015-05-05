@@ -31,20 +31,36 @@
 <script>
     jQuery(function($){
             // initialize Isotope after all images have loaded
-            var wWidth = $(window).width();
-            var colWidth = (wWidth / 3);
+            var wWidth   = $(window).width(),
+                colWidth = (wWidth / 3);
             console.log(wWidth);
             console.log(colWidth);
             var afterLoad = function(){
-               var bricks = $('article.item');
+               var bricks         = $('article.item'),
+                   masonHeight    = $('#masonry-loop').height(),
+                   colOneHeight   = 0,
+                   colTwoHeight   = 0,
+                   colThreeHeight = 0;
+
+
                 bricks.each(function( index, obj){
+                    console.log(masonHeight);
                     if ($(this).css('left') === '0px'){
                         $(this).addClass('clear-dots');
+                        colOneHeight = colOneHeight + $(this).outerHeight();
                     }
+                    if ($(this).css('left') === '479px'){
+                        colTwoHeight = colTwoHeight + $(this).outerHeight();
+                    }
+                    if ($(this).css('left') === '959px'){
+                        colThreeHeight = colThreeHeight + $(this).outerHeight();
+                    }
+                    console.log('One ' + colOneHeight);
+                    console.log('Two ' + colTwoHeight);
+                    console.log('Three ' + colThreeHeight);
+
                 });
-//            console.log($('article.item'));
-               // $('#post-56').css('border-width', '0');
-        };
+            };
             $('.isotope').imagesLoaded( function() {
                 var $container = $('.isotope').isotope({
                     itemSelector: '.item',

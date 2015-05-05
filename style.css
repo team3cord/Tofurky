@@ -528,16 +528,30 @@ header.site-header{
    position: absolute;
     top: 0;
     left: 69px;
-    opacity: 1;
+    width: 223px;
+    max-height: 141px;
+    -webkit-transition-property: all;
+    -webkit-transition-duration: .5s;
+    -webkit-transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+    -moz-transition-property: all;
+    -moz-transition-duration: .5s;
+    -moz-transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+    -ms-transition-property: all;
+    -ms-transition-duration: .5s;
+    -ms-transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+    transition-property: all;
+    transition-duration: .5s;
+    transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+    /*opacity: 1;
     -webkit-transition: opacity .5s ease-in-out;
     -moz-transition: opacity .5s ease-in-out;
     -o-transition: opacity .5s ease-in-out;
     -ms-transition: opacity .5s ease-in-out;
-    transition: opacity .5s ease-in-out;
+    transition: opacity .5s ease-in-out;*/
 
 }
 .logo-overlay.sticky {
-    opacity: 0;
+    max-height: 0;
 }
 
 header.site-header.sticky {
@@ -619,7 +633,6 @@ header.site-header.sticky .search-box-btn a {
     background-color: #589102;
     font-family: "TrueNorthRoughBlack-Regular", serif;
     font-weight: 300;
-    font-style: italic;
     font-size: 29px;
     border: none;
     border-radius: 0;
@@ -644,7 +657,7 @@ header.site-header.sticky div.small-sticky {
     border-width: 0 0 0 2px;
     border-image-slice: 0 0 0 20;
     border-image-width: 20px 20px 20px 20px;
-    border-image-outset: 20px 0px 21px 0px;
+    border-image-outset: 18px 0px 21px 0px;
     border-image-repeat: repeat repeat;
     border-image-source: url("imgs/nav-line-sprite.png");
 // set animation
@@ -841,7 +854,6 @@ footer.site-footer p {
     padding: 35px 30px 0 30px;
     font-family: "TrueNorthBlack-Regular", sans-serif;
     font-weight: 300;
-    font-style: italic;
     font-size: 13px;
 	text-decoration: none;
     text-transform: lowercase;
@@ -849,7 +861,7 @@ footer.site-footer p {
     border-width: 0 0 0 2px;
     border-image-slice: 0 0 0 20;
     border-image-width: 20px 20px 20px 20px;
-    border-image-outset: 20px 0px 21px 0px;
+    border-image-outset: 18px 0px 21px 0px;
     border-image-repeat: repeat repeat;
     border-image-source: url("imgs/nav-line-sprite.png");
     /*
