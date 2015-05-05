@@ -1420,7 +1420,15 @@ body.paged div.dotted-horz, body.paged div.featured-callout {
 .entry-content-single .no-break {
     display:none;
 }
-
+.st_email_custom {
+    display: inline-block;
+    height: 60px;
+    width: 40px;
+    background-image: url("imgs/optimised.svg");
+    background-size: 95px 95px;
+    background-repeat: no-repeat;
+    background-position: -46px -2px;
+}
 .st_pinterest_custom {
     display: inline-block;
     height: 60px;
