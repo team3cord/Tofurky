@@ -36,18 +36,18 @@
             console.log(wWidth);
             console.log(colWidth);
             $('.isotope').imagesLoaded( function() {
-                $('.isotope').isotope({
+                var $contatiner = $('.isotope').isotope({
                     itemSelector: '.item',
                     masonry: {
                         columnWidth: colWidth
                     }
                 });
+                $contatiner.isotope('on', 'layoutComplete', function(laidOutItems){
 
-                if ($('article.item').css('left') === '0'){
-                    alert('found');
-                    this.removeClass('dark-lft');
-                    console.log(this);
-                }
+                    console.log($('#post-06').css('left'));
+                });
+
+                console.log('when');
             });
         $(window).resize(function(){
 
