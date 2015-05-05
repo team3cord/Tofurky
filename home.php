@@ -14,6 +14,7 @@ get_header(); ?>
             <div id="masonry-loop" class="isotope">
                 <div class="featured-callout">
                     <span><?php echo get_field('main_featured_callout', 5); ?></span>
+                    <div class="dotted-horz-drk"></div>
                 </div>
                 <div class="dotted-horz"></div>
 

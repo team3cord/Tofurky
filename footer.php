@@ -41,8 +41,14 @@
                     masonry: {
                         columnWidth: colWidth
                     }
-                })
-            })
+                });
+
+                if ($('article.item').css('left') === '0'){
+                    alert('found');
+                    this.removeClass('dark-lft');
+                    console.log(this);
+                }
+            });
         $(window).resize(function(){
 
             // initialize Isotope after all images have loaded

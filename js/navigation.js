@@ -51,7 +51,6 @@ jQuery(function($){
 
         });
 
-
         function featuredImage(feature){
                 $(feature).eq(0).addClass('featured-one');
                 $(feature).eq(1).addClass('featured-two');
