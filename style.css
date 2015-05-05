@@ -1108,7 +1108,7 @@ HOME PAGE
     display: block;
     float: left;
     width: 33.27%;
-    padding: 1% .5%;
+    padding: .3% .5%;
 /*    border-width:1px 1px 1px 1px;
     -moz-border-image:url("imgs/new-dots.png") 1 1 1 1 repeat repeat;
     -webkit-border-image:url("imgs/new-dots.png") 1 1 1 1 repeat repeat;
@@ -1133,7 +1133,7 @@ HOME PAGE
         -moz-border-image: url("imgs/border-dots.png")5 5 5 5 repeat stretch;
         border-image: url("imgs/border-dots.png")5 5 5 5 repeat stretch; */
 /*}*/
-.featured-one article.item {width: 100%;padding: 0 0 7px 0;border-width: 0;}
+.featured-one article.item {width: 100%;padding: 0 0 .2% 0;border-width: 0;}
 .featured-two article.item {width: 66.57%;border-width: 0;}
 
 .featured-one div.post-cat-icon {
@@ -1158,7 +1158,7 @@ HOME PAGE
     z-index: 1;
     border-width:6px 0px 0px 0px;
     border-image-slice: 6 0 0 0;
-    border-image-width: 8px 0px 0px 0px;
+    border-image-width: 6px 0px 0px 0px;
     border-image-outset: 6px 0px 0px 0px;
     border-image-repeat: repeat repeat;
     border-image-source: url("imgs/horz-dots.png")
@@ -1170,16 +1170,16 @@ HOME PAGE
 .dark-btm {
     border-width: 0 0 6px 0;
     border-image-slice: 0 5 7 0;
-    border-image-width: 0px 0px 10px 0px;
-    border-image-outset: 0px 0px 1px 0px;
+    border-image-width: 0px 0px 7px 0px;
+    border-image-outset: 0px 3px 1px 3px;
     border-image-repeat: repeat repeat;
     border-image-source: url("imgs/horz-dots-drk.png");
 }
 .dark-lft {
     border-width: 0 0 0 6px;
     border-image-slice: 0 0 0 6;
-    border-image-width: 0px 0px 0px 8px;
-    border-image-outset: 13px 0px 0px 0px;
+    border-image-width: 0px 0px 0px 6px;
+    border-image-outset: 9px 0px 0px 0px;
     border-image-repeat: repeat repeat;
     border-image-source: url("imgs/vert-dots-drk.png");
 
@@ -1187,7 +1187,7 @@ HOME PAGE
 .dark-rt {
     border-width:  0 6px 0 0;
     border-image-slice:  0 6 0 0;
-    border-image-width: 0px 8px 0px 0px;
+    border-image-width: 0px 6px 0px 0px;
     border-image-outset: 13px 0px 0px 0px;
     border-image-repeat: repeat repeat;
     border-image-source: url("imgs/vert-dots-drk.png");
@@ -1282,7 +1282,7 @@ body.paged div.dotted-horz, body.paged div.featured-callout {
     line-height: 27px;
 }
 .masonry-details {
-    margin-top: 20px;
+    margin: 20px 0 20px 25px;
 }
 .masonry-details a {
     text-decoration: none;
@@ -1473,7 +1473,7 @@ p.full-image {
     width: 100%;
     border-width: 0 0 6px 0;
     border-image-slice: 0 5 7 0;
-    border-image-width: 0px 0px 10px 0px;
+    border-image-width: 0px 0px 7px 0px;
     border-image-outset: 0px 0px 1px 0px;
     border-image-repeat: repeat repeat;
     border-image-source: url("imgs/horz-dots-drk.png");
@@ -1589,7 +1589,7 @@ p.full-image {
     padding: 20px 0 ;
     border-width: 0 0 6px 0;
     border-image-slice: 0 5 7 0;
-    border-image-width: 0px 0px 10px 0px;
+    border-image-width: 0px 0px 7px 0px;
     border-image-outset: 0px 0px 1px 0px;
     border-image-repeat: repeat repeat;
     border-image-source: url("imgs/horz-dots-drk.png");
