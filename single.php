@@ -31,4 +31,17 @@ get_header(); ?>
 	</div><!-- #primary -->
 
 <?php get_sidebar(); ?>
+<script>
+    jQuery(function($){
+        var primaryHeight   = $('#primary'),
+            secondaryHeight = $('#secondary');
+        console.log(primaryHeight + 'pri');
+        console.log(secondaryHeight + 'sec');
+        if (primaryHeight.height() >= secondaryHeight.height()){
+            primaryHeight.addClass('dark-rt');
+        } else {
+            secondaryHeight.addClass('dark-lft');
+        }
+    });
+</script>
 <?php get_footer(); ?>

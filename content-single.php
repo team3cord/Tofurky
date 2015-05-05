@@ -9,17 +9,23 @@
 ?>
 <!-- content single -->
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header class="entry-header">
-		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 
-		<div class="entry-meta">
-			<//?php hood_river_posted_on(); ?>
-		</div><!-- .entry-meta -->
-	</header><!-- .entry-header -->
 
 	<div class="entry-content-single">
 
-		<?php the_content(); ?>
+        <header class="entry-header dark-btm">
+            <?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+
+            <div class="entry-meta">
+                <//?php hood_river_posted_on(); ?>
+            </div><!-- .entry-meta -->
+            <div class="sharing">
+                <span class='st_email_large' st_title='<?php the_title(); ?>' st_url='<?php the_permalink(); ?>'></span>
+                <span class='st_pinterest_custom' st_title='<?php the_title(); ?>' st_url='<?php the_permalink(); ?>'></span>
+                <span class='st_facebook_custom' st_title='<?php the_title(); ?>' st_url='<?php the_permalink(); ?>'></span>
+                <span class='st_twitter_custom' st_title='<?php the_title(); ?>' st_url='<?php the_permalink(); ?>'></span>
+            </div>
+        </header><!-- .entry-header -->		<?php the_content(); ?>
 
 
 

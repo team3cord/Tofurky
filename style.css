@@ -1171,6 +1171,15 @@ HOME PAGE
     border-image-source: url("imgs/vert-dots-drk.png");
 
 }
+.dark-rt {
+    border-width:  0 6px 0 0;
+    border-image-slice:  0 6 0 0;
+    border-image-width: 0px 11px 0px 0px;
+    border-image-outset: 13px 0px 0px 0px;
+    border-image-repeat: repeat repeat;
+    border-image-source: url("imgs/vert-dots-drk.png");
+
+}
 body.paged div.dotted-horz, body.paged div.featured-callout {
     display: none;
 }
@@ -1363,28 +1372,27 @@ body.paged div.dotted-horz, body.paged div.featured-callout {
     display: block;
     float: left;
     width: 66%;
-    border-width:0px 2px 0px 0px;
-    -moz-border-image:url("imgs/new-dots.png") 0 4 0 0 repeat repeat;
-    -webkit-border-image:url("imgs/new-dots.png") 0 4 0 0 repeat repeat;
-    border-image:url("imgs/new-dots.png") 0 4 0 0 repeat repeat;
+    margin-top: 19px;
 }
 #secondary {
     display: block;
     float: left;
     width: 33.9%;
     padding-top: 125px;
+    margin-top: 19px;
 }
 .entry-header {
     float: left;
     padding: 130px 40px 20px 40px;
+    position: relative;
 }
 .entry-header h1 {
-    font-family: "MuseoSlab-300",serif;
+    font-family: "TrueNorthBlack-Regular",sans-serif;
     font-weight: 300;
-    font-size: 44px;
+    font-size: 40px;
     font-weight: normal;
     line-height: 51px;
-    color: #73be02;
+    color: #111;
 
 }
 .entry-content-single {
@@ -1394,9 +1402,34 @@ body.paged div.dotted-horz, body.paged div.featured-callout {
     position: relative;
 }
 .entry-content-single .no-break {
-    display: inline-block;
-    padding: 0 0 0 36px;
+    display:none;
+}
 
+.st_pinterest_custom {
+    display: inline-block;
+    height: 60px;
+    width: 40px;
+    background-image: url("imgs/sidebar-social-sprite.png");
+    background-repeat: no-repeat;
+    background-position: 1px 1px;
+
+}
+.st_facebook_custom {
+    display: inline-block;
+    height: 60px;
+    width: 40px;
+    background-image: url("imgs/sidebar-social-sprite.png");
+    background-repeat: no-repeat;
+    background-position: -73px 1px;
+
+}
+.st_twitter_custom {
+    display: inline-block;
+    height: 60px;
+    width: 40px;
+    background-image: url("imgs/sidebar-social-sprite.png");
+    background-repeat: no-repeat;
+    background-position: -109px 1px;
 }
 .entry-content-single p {
     padding: 5px 40px;
@@ -1405,6 +1438,9 @@ body.paged div.dotted-horz, body.paged div.featured-callout {
     font-size: 17px;
     margin: 0;
     color: #585757;
+}
+p.no-break:first-of-type + p {
+    padding: 5px 0 0 0;
 }
 p.full-image {
     float: left;
@@ -1418,8 +1454,13 @@ p.full-image {
     padding: 10px;
 }
 .entry-content-single img.size-full:first-of-type{
-    width: 98%;
-    padding: 1%;
+    width: 100%;
+    border-width: 0 0 6px 0;
+    border-image-slice: 0 5 7 0;
+    border-image-width: 0px 0px 13px 0px;
+    border-image-outset: 0px 0px 1px 0px;
+    border-image-repeat: repeat repeat;
+    border-image-source: url("imgs/horz-dots-drk.png");
 }
 .before-image {
     position: absolute;
@@ -1465,14 +1506,17 @@ p.full-image {
     color: #585757;
     text-decoration: none;
 }
+.fullline {
+    display: block;
+    float: left;
+    width: 100%;
+    height: 13px;
+}
 .comments-area {
     display: block;
     float: left;
+    width: 100%;
     padding: 30px 30px 50px 30px;
-    border-width:2px 0px 0px 0px;
-    -moz-border-image:url("imgs/new-dots.png") 4 0 0 0 repeat repeat;
-    -webkit-border-image:url("imgs/new-dots.png") 4 0 0 0 repeat repeat;
-    border-image:url("imgs/new-dots.png") 4 0 0 0 repeat repeat;
 }
 .comments-area p {
     font-family: "ProximaNova-Bold",sans-serif;
@@ -1480,10 +1524,21 @@ p.full-image {
     font-size: 17px;
 
 }
+
+.comments-area p.comment-form-url {
+    display: none;
+}
 .comments-area p.form-allowed-tags {
+    display: none;
     font-family: "ProximaNova-Regular", sans-serif;
     font-weight: 400;
     color: #4e4c4c;
+}
+.comment-form-comment {
+    width: 58%;
+}
+.comment-form-comment textarea {
+    height: 100px;
 }
 .comments-area input[type='submit'] {
     height: 30px;
@@ -1505,17 +1560,23 @@ p.full-image {
     font-family: "ProximaNova-Bold",sans-serif;
     font-size: 700;
     color: #585757;
+    padding-bottom: 25px;
 }
 #commentform {
     padding: 70px;
 }
 .comment-list li {
+    display: block;
+    float: left;
+    width: 100%;
     margin-top: 30px;
     padding: 20px 0 ;
-    border-width: 2px 0px 0px 0px;
-     -moz-border-image:url("imgs/new-dots.png") 4 0 0 0 repeat repeat;
-    -webkit-border-image:url("imgs/new-dots.png") 4 0 0 0 repeat repeat;
-    border-image:url("imgs/new-dots.png") 4 0 0 0 repeat repeat;
+    border-width: 0 0 6px 0;
+    border-image-slice: 0 5 7 0;
+    border-image-width: 0px 0px 13px 0px;
+    border-image-outset: 0px 0px 1px 0px;
+    border-image-repeat: repeat repeat;
+    border-image-source: url("imgs/horz-dots-drk.png");
 }
 .vcard {
     float: left;
@@ -1596,7 +1657,7 @@ p.full-image {
     padding: 0 30px;
 }
 #secondary h1 {
-    font-family: "MuseoSlab-300",serif;
+    font-family: "TrueNorthBlack-Regular",sans-serif;
     font-weight: 300;
     font-size: 32px;
     color: #73be02;
@@ -1609,11 +1670,15 @@ p.full-image {
     color: #4e4c4c;
 }
 .social-feed a {
+    display: block;
+    float: left;
     color: #73be02;
 }
+.fts-tweeter-wrap .tweeter-info {
+    border-bottom: none!important;
+}
 .side-email {
-    padding: 30px 30px 40px 30px;
-    margin-bottom: 60px;
+    padding: 30px 30px 75px 30px;
 }
 .side-email input[type='email']{
      height: 40px;
@@ -1646,7 +1711,7 @@ p.full-image {
     display: none;
 }
 .side-email span {
-    font-family: "MuseoSlab-300Italic",serif;
+    font-family: "truenorthblack-regular",sans-serif;
     font-weight: 300;
     font-size: 22px;
     font-style: italic;

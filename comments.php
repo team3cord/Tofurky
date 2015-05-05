@@ -19,6 +19,7 @@ if ( post_password_required() ) {
 ?>
 
 <!-- comments -->
+<div class="fullline dark-btm"></div>
 <div id="comments" class="comments-area">
 
 	<?php // You can start editing here -- including this comment! ?>
@@ -26,7 +27,7 @@ if ( post_password_required() ) {
     	<?php comment_form(); ?>
 
 	<?php if ( have_comments() ) : ?>
-		<h2 class="comments-title">
+		<h2 class="comments-title dark-btm">
 			<?php
 				printf( _nx( 'One thought on &ldquo;%2$s&rdquo;', '%1$s thoughts on &ldquo;%2$s&rdquo;', get_comments_number(), 'comments title', 'hood-river' ),
 					number_format_i18n( get_comments_number() ), '<span>' . get_the_title() . '</span>' );

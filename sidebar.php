@@ -14,7 +14,8 @@
     <div class="social-feed">
         <?php echo do_shortcode("[fts twitter twitter_name=@tofurky]"); ?>
     </div>
-    <div class="side-email">
+    <div class="fullline dark-btm"></div>
+    <div class="side-email dark-btm">
         <span>keep in touch</span>
         <?php echo do_shortcode('[contact-form-7 id="79" title="Sidebar Email Signup"]');?>
         <ul>
@@ -34,7 +35,7 @@
             $posts = get_posts('numberposts=2&category='. $category->term_id);
             foreach($posts as $post) :
                 ?>
-                <div class="side-recent-post">
+                <div class="side-recent-post dark-btm">
                     <a href="<?php the_permalink(); ?>">
                     <?php the_post_thumbnail(); ?>
                         <h5><?php the_title(); ?></h5>
