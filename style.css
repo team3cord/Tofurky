@@ -1181,6 +1181,9 @@ HOME PAGE
     border-image-source: url("imgs/vert-dots-drk.png");
 
 }
+.clear-dots {
+    border-width: 0!important;
+}
 body.paged div.dotted-horz, body.paged div.featured-callout {
     display: none;
 }

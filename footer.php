@@ -35,19 +35,24 @@
             var colWidth = (wWidth / 3);
             console.log(wWidth);
             console.log(colWidth);
+            var afterLoad = function(){
+               var bricks = $('article.item');
+                bricks.each(function( index, obj){
+                    if ($(this).css('left') === '0px'){
+                        $(this).addClass('clear-dots');
+                    }
+                });
+//            console.log($('article.item'));
+               // $('#post-56').css('border-width', '0');
+        };
             $('.isotope').imagesLoaded( function() {
-                var $contatiner = $('.isotope').isotope({
+                var $container = $('.isotope').isotope({
                     itemSelector: '.item',
                     masonry: {
                         columnWidth: colWidth
                     }
                 });
-                $contatiner.isotope('on', 'layoutComplete', function(laidOutItems){
-
-                    console.log($('#post-06').css('left'));
-                });
-
-                console.log('when');
+                $container.isotope('on', 'arrangeComplete', afterLoad());
             });
         $(window).resize(function(){
 
