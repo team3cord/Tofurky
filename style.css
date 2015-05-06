@@ -1426,6 +1426,10 @@ img.aligncenter { display: block; margin-left: auto; margin-right: auto; }
     float: left;
     position: relative;
 }
+.entry-content-single strong {
+    font-family: "ProximaNova Bold";
+    font-weight: bold;
+}
 .entry-content-single .no-break {
     display:none;
 }
@@ -1709,6 +1713,11 @@ a.open-comments:hover {
 }
 .show-search {
     min-height: 385px;
+}
+.wc-gallery {
+    display: block;
+    float: left;
+    width: 100%;
 }
 /*--------------------------------------------------------------
 10.2 Asides
