@@ -70,6 +70,12 @@
                 });
                 $container.isotope('on', 'arrangeComplete', afterLoad());
             });
+            var openBtn = $('.open-comments');
+            openBtn.on('click', function(e){
+                e.preventDefault();
+                $('.comment-slide').addClass('open-comm');
+                openBtn.css('display','none');
+            });
         $(window).resize(function(){
 
             // initialize Isotope after all images have loaded

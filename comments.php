@@ -23,8 +23,15 @@ if ( post_password_required() ) {
 <div id="comments" class="comments-area">
 
 	<?php // You can start editing here -- including this comment! ?>
-    <span class="comment-num"><?php echo comments_number(); ?></span><br>
-    	<?php comment_form(); ?>
+    <div class="comment-num-block">
+        <span class="comment-num"><?php echo comments_number(); ?></span>
+    </div>
+    <div class="comment-add-block">
+        <a href="#" class="open-comments">Add a Comment</a>
+    </div>
+    <div class="comment-slide">
+        <?php comment_form(); ?>
+    </div>
 
 	<?php if ( have_comments() ) : ?>
 		<h2 class="comments-title dark-btm">

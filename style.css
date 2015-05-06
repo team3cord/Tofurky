@@ -151,7 +151,7 @@ button,
 input,
 select,
 textarea {
-	color: #4e4c4c;
+	color: #000000;
 	font-family: "ProximaNova-Light";
 	font-size: 16px;
 	font-size: 1.6rem;
@@ -741,7 +741,7 @@ footer.site-footer p {
     padding: 6px 0 0 20px;
     border: none;
     border-radius: 5px;
-    color: #4e4c4c;
+    color: #000000;
 }
 .footer-contact input[type='submit'] {
     display: none;
@@ -1295,7 +1295,8 @@ body.paged div.dotted-horz, body.paged div.featured-callout {
     margin-top: 5px;
 }
 .comment-num {
-    display: inline-block;
+    display: block;
+    float: left;
     padding: 3px 15px 10px 33px;
     background-image: url("imgs/icon-com.png");
     background-repeat: no-repeat;
@@ -1548,7 +1549,12 @@ p.full-image {
     font-size: 17px;
 
 }
-
+.comment-num-block, .comment-add-block {
+    display: block;
+    float: left;
+    width: 20%;
+    margin-bottom: 25px;
+}
 .comments-area p.comment-form-url {
     display: none;
 }
@@ -1556,7 +1562,7 @@ p.full-image {
     display: none;
     font-family: "ProximaNova-Regular", sans-serif;
     font-weight: 400;
-    color: #4e4c4c;
+    color: #000000;
 }
 .comment-form-comment {
     width: 58%;
@@ -1564,18 +1570,40 @@ p.full-image {
 .comment-form-comment textarea {
     height: 100px;
 }
-.comments-area input[type='submit'] {
+a.open-comments {
+    display: block;
+    float: left;
+    text-decoration: none;
+    color: #FFFFFF;
+
+}
+a.open-comments:hover {
+    color: #FFFFFF;
+}
+.open-comments, .comments-area input[type='submit'] {
     height: 30px;
     width: 130px;
     border: none;
     border-radius: 10px;
-    background: #4e4c4c;
+    background: #000000;
     color: #ffffff;
     font-family: 'ProximaNova-Bold',sans-serif;
     font-weight: 700;
     font-size: 15px;
     padding: 6px;
     box-shadow: none;
+}
+.comment-slide {
+    max-height: 0;
+    transition: max-height 0.15s ease-out;
+    overflow: hidden;
+}
+.comment-slide.open-comm {
+    display: block;
+    float: left;
+    width: 100%;
+    max-height: 1000px;
+    transition: max-height 0.25s ease-in;
 }
 .comment-respond {
     margin-top: 30px;
@@ -1648,7 +1676,7 @@ p.full-image {
     font-family: "MuseoSlab-300",serif;
     font-weight: 300;
     font-size: 44px;
-    color: #4e4c4c;
+    color: #000000;
     line-height: 51px;
 }
 .not-found input[type='text']{
@@ -1691,7 +1719,7 @@ p.full-image {
     font-family: "ProximaNova-Bold",sans-serif;
     font-weight: 700;
     font-size: 15px;
-    color: #4e4c4c;
+    color: #000000;
 }
 .social-feed a {
     display: block;
