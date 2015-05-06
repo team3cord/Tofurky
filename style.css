@@ -1574,6 +1574,7 @@ p.full-image {
 a.open-comments {
     display: block;
     float: left;
+    padding-left: 10px;
     text-decoration: none;
     color: #FFFFFF;
 
