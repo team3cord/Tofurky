@@ -1148,6 +1148,7 @@ HOME PAGE
 
 }
 .featured-callout p {
+    color: #FFFFFF;
     margin-bottom: 0;
 }
 .dotted-horz {
@@ -1351,6 +1352,12 @@ body.paged div.dotted-horz, body.paged div.featured-callout {
 /*--------------------------------------------------------------
 10.1 Posts and pages
 --------------------------------------------------------------*/
+img.alignright { float: right; margin: 0 0 1em 1em; }
+img.alignleft { float: left; margin: 0 1em 1em 0; }
+img.aligncenter { display: block; margin-left: auto; margin-right: auto; }
+.alignright { float: right; }
+.alignleft { float: left; }
+.aligncenter { display: block; margin-left: auto; margin-right: auto; }
 .sticky {
 	display: block;
 }
@@ -1458,6 +1465,9 @@ body.paged div.dotted-horz, body.paged div.featured-callout {
     background-position: -109px 1px;
 }
 .entry-content-single p {
+    display: block;
+    float: left;
+    width: 100%;
     padding: 5px 40px;
     font-family: "ProximaNova-Light",sans-serif;
     font-weight: 300;
@@ -1998,8 +2008,8 @@ only screen and (max-device-width : 900px){
     #menu-item-14 a {background-position: -481px 0px;}
     .search-box-btn{width: 100px;background-position: -6px 0px;}
     .search-box-mc input[type='text']{width: 421px;}
-    .featured-callout {top:100px;}
-    .dotted-horz {top: 250px;}
+    .featured-callout {top:120px;}
+    .dotted-horz {top: 260px;}
     .featured-one div.masonry-details {top:256px;width: 80%;}
     .featured-callout span {font-size:100px;}
     /*.item {width: 49.5%;}

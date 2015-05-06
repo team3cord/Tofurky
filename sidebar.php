@@ -27,27 +27,44 @@
         </ul>
     </div>
     <div class="most-recent">
-        <?php global $post;
-        $categories = get_the_category();
-        foreach ($categories as $category) :
-        ?>
-            <?php
-            $posts = get_posts('numberposts=2&category='. $category->term_id);
-            foreach($posts as $post) :
-                ?>
-                <div class="side-recent-post dark-btm">
-                    <a href="<?php the_permalink(); ?>">
-                    <?php the_post_thumbnail(); ?>
-                        <h5><?php the_title(); ?></h5>
-                    </a>
-                    <div class="com-tag">
-                     <span class="comment-num"><?php echo comments_number(); ?></span>
-                     <span class="tag-list"> <?php echo get_the_tag_list(' ',', ',' '); ?></span>
-                    </div>
+        <?php
+        if ( is_single() ) {
+            $cats = wp_get_post_categories($post->ID);
+            if ($cats) {
+                $first_cat = $cats[0];
+                $args=array(
+                    'cat' => $first_cat, //cat__not_in wouldn't work
+                    'post__not_in' => array($post->ID),
+                    'showposts'=>2,
+                    'caller_get_posts'=>1
+                );
+                $my_query = new WP_Query($args);
+                if( $my_query->have_posts() ) {
+                    while ($my_query->have_posts()) : $my_query->the_post(); ?>
+
+                        <div class="side-recent-post dark-btm">
+                            <a href="<?php the_permalink(); ?>">
+                            <?php the_post_thumbnail(); ?>
+                            <h5><?php the_title(); ?></h5>
+                            </a>
+                            <div class="com-tag">
+                              <span class="comment-num"><?php echo comments_number(); ?></span>
+                              <span class="tag-list"> <?php echo get_the_tag_list(' ',', ',' '); ?></span>
+                            </div>
 
                 </div>
-            <?php endforeach; ?>
 
-            <?php endforeach; ?>
-    </div>
+
+
+                    <?php
+                    endwhile;
+                } //if ($my_query)
+            } //if ($cats)
+            wp_reset_query();  // Restore global post data stomped by the_post().
+        } //if (is_single())
+        ?>
+
+   </div>
 </div><!-- #secondary -->
+
+
