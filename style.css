@@ -1,4 +1,4 @@
-/*
+/*width: 100%;
 Theme Name: Hood River
 Theme URI: http://underscores.me/
 Author: Subtle Digital
@@ -530,17 +530,17 @@ header.site-header{
     left: 69px;
     width: 223px;
     max-height: 141px;
-    -webkit-transition-property: all;
-    -webkit-transition-duration: .5s;
+    -webkit-transition-property: top;
+    -webkit-transition-duration: .8s;
     -webkit-transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
-    -moz-transition-property: all;
-    -moz-transition-duration: .5s;
+    -moz-transition-property: top;
+    -moz-transition-duration: .8s;
     -moz-transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
-    -ms-transition-property: all;
-    -ms-transition-duration: .5s;
+    -ms-transition-property: top;
+    -ms-transition-duration: .8s;
     -ms-transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
-    transition-property: all;
-    transition-duration: .5s;
+    transition-property: top;
+    transition-duration: .8s;
     transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
     /*opacity: 1;
     -webkit-transition: opacity .5s ease-in-out;
@@ -551,6 +551,7 @@ header.site-header{
 
 }
 .logo-overlay.sticky {
+    top:-141px;
     max-height: 0;
 }
 
@@ -974,7 +975,8 @@ footer.site-footer p {
 .site-main .comment-navigation,
 .site-main .paging-navigation,
 .site-main .post-navigation {
-	margin: 0 0 1.5em;
+	margin: 25px 0 1.5em;
+    min-height: 150px;
 	overflow: hidden;
 }
 
@@ -1298,6 +1300,7 @@ body.paged div.dotted-horz, body.paged div.featured-callout {
 .comment-num {
     display: block;
     float: left;
+    margin-right: 10px;
     padding: 3px 15px 10px 33px;
     background-image: url("imgs/icon-com.png");
     background-repeat: no-repeat;
@@ -1309,7 +1312,8 @@ body.paged div.dotted-horz, body.paged div.featured-callout {
 }
 .tag-list {
     display: inline-block;
-    margin-left: 10px;
+    min-height: 28px;
+
     padding: 3px 15px 10px 33px;
     background-image: url("imgs/icon-tag.png");
     background-repeat: no-repeat;
@@ -1408,6 +1412,7 @@ img.aligncenter { display: block; margin-left: auto; margin-right: auto; }
 }
 .entry-header {
     float: left;
+    width: 100%;
     padding: 130px 40px 20px 40px;
     position: relative;
 }
