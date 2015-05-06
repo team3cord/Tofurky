@@ -553,6 +553,18 @@ header.site-header{
 .logo-overlay.sticky {
     top:-141px;
     max-height: 0;
+    -webkit-transition-property: top;
+    -webkit-transition-duration: .8s;
+    -webkit-transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+    -moz-transition-property: top;
+    -moz-transition-duration: .8s;
+    -moz-transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+    -ms-transition-property: top;
+    -ms-transition-duration: .8s;
+    -ms-transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+    transition-property: top;
+    transition-duration: .8s;
+    transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
 }
 
 header.site-header.sticky {
