@@ -1308,6 +1308,7 @@ body.paged div.dotted-horz, body.paged div.featured-callout {
 }
 .tag-list {
     display: inline-block;
+    margin-left: 10px;
     padding: 3px 15px 10px 33px;
     background-image: url("imgs/icon-tag.png");
     background-repeat: no-repeat;
@@ -1541,7 +1542,7 @@ p.full-image {
     display: block;
     float: left;
     width: 100%;
-    padding: 30px 30px 50px 30px;
+    padding: 30px 30px 50px 40px;
 }
 .comments-area p {
     font-family: "ProximaNova-Bold",sans-serif;
