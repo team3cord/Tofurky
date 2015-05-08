@@ -1451,12 +1451,12 @@ img.aligncenter { display: block; margin-left: auto; margin-right: auto; }
 }
 .st_email_custom {
     display: inline-block;
-    height: 60px;
-    width: 40px;
-    background-image: url("imgs/optimised.svg");
-    background-size: 95px 95px;
+    height: 21px;
+    width: 21px;
+    margin: 0 0 28px 9px;
+    background-image: url("imgs/email-drk.png");
     background-repeat: no-repeat;
-    background-position: -46px -2px;
+    background-position:0;
 }
 .st_pinterest_custom {
     display: inline-block;
@@ -1484,7 +1484,9 @@ img.aligncenter { display: block; margin-left: auto; margin-right: auto; }
     background-repeat: no-repeat;
     background-position: -109px 1px;
 }
-.st_email_custom:hover {color:#4e4c4c;}
+.st_email_custom:hover {
+    background-image: url("imgs/email.png");
+}
 .st_facebook_custom:hover, .st_pinterest_custom:hover, .st_twitter_custom:hover {
     background-image: url("imgs/sidebar-social-sprite-hov.png");
 }
