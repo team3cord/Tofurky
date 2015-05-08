@@ -1767,6 +1767,19 @@ a.open-comments:hover {
 .fts-tweeter-wrap .tweeter-info {
     border-bottom: none!important;
 }
+.social-feed img {
+    display:none;
+}
+.tweeter-info .right {
+    margin-left: 33px;
+    margin-right: 33px;
+}
+.tweeter-info .time {
+    display: inline-block;
+}
+.tweeter-info .time a {
+    color: #000000;
+}
 .side-email {
     padding: 30px 30px 75px 30px;
 }
