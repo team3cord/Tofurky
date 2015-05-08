@@ -552,7 +552,6 @@ header.site-header{
 }
 .logo-overlay.sticky {
     top:-141px;
-    max-height: 0;
     -webkit-transition-property: top;
     -webkit-transition-duration: .8s;
     -webkit-transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
@@ -1485,6 +1484,10 @@ img.aligncenter { display: block; margin-left: auto; margin-right: auto; }
     background-repeat: no-repeat;
     background-position: -109px 1px;
 }
+.st_email_custom:hover {color:#4e4c4c;}
+.st_facebook_custom:hover, .st_pinterest_custom:hover, .st_twitter_custom:hover {
+    background-image: url("imgs/sidebar-social-sprite-hov.png");
+}
 .entry-content-single p {
     display: block;
     float: left;
@@ -1706,7 +1709,7 @@ a.open-comments:hover {
     width: 65%;
 }
 .not-found h1, #archive-primary h1 {
-    font-family: "MuseoSlab-300",serif;
+    font-family: "TrueNorthBlack-Regular",sans-serif;
     font-weight: 300;
     font-size: 44px;
     color: #000000;
@@ -1719,9 +1722,8 @@ a.open-comments:hover {
     width: 501px;
     padding-left: 85px;
     background-color: #efefef;
-    font-family: "MuseoSlab-300Italic", serif;
+    font-family: "TrueNorthBlack-Regular", sans-serif;
     font-weight: 300;
-    font-style: italic;
     font-size: 24px;
     border: none;
     border-radius: 0;
@@ -1817,7 +1819,6 @@ a.open-comments:hover {
     font-family: "truenorthblack-regular",sans-serif;
     font-weight: 300;
     font-size: 22px;
-    font-style: italic;
 }
 div.wpcf7-mail-sent-ok {
     background: #ffffff;
