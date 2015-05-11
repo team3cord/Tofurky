@@ -23,6 +23,8 @@
                 <span class='st_pinterest_custom' st_title='<?php the_title(); ?>' st_url='<?php the_permalink(); ?>'></span>
                 <span class='st_facebook_custom' st_title='<?php the_title(); ?>' st_url='<?php the_permalink(); ?>'></span>
                 <span class='st_twitter_custom' st_title='<?php the_title(); ?>' st_url='<?php the_permalink(); ?>'></span>
+                <span class="st_instagram_custom"><a href="https://instagram.com/the_tofurky_company/" target="_blank"></a></span>
+
                 <span class='st_email_custom' st_title='<?php the_title(); ?>' st_url='<?php the_permalink(); ?>'></span>
             </div>
         </header><!-- .entry-header -->		<?php the_content(); ?>

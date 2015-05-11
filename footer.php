@@ -19,7 +19,7 @@
                 <li><a class="pin-wt" href="http://www.pinterest.com/tofurky/" target="_blank"></a></li>
                 <!--<li><a class="inst-wt" href="http://instagram.com/tofurky" target="_blank"></a></li>-->
                 <li><a class="fb-wt" href="https://www.facebook.com/TofurkyFan" target="_blank"></a></li>
-                <li><a class="twt-wt" href="https://twitter.com/@tofurky" target="_blank"></a></li>
+                <li><a class="inst-wt" href="https://instagram.com/the_tofurky_company/" target="_blank"></a></li>
                 <li><a class="rss-wt" href="http://blog.tofurky.com/rss"></a></li>
             </ul>
         </div>
