@@ -722,7 +722,7 @@ footer.site-footer{
     bottom: 0;
     float: left;
     width: 100%;
-    padding: 0 35px;
+    padding: 0 15px 0 35px;
     min-height: 60px;
     background-color: #000000;
     z-index: 2;
@@ -800,15 +800,13 @@ footer.site-footer p {
     width: 19px;
     margin-right: 20px;
     margin-top: 27px;
-    background-repeat: no-repeat;
-    color: #ffffff;
 }
 .svg-pin, .svg-fb, .svg-inst,.svg-twt, .svg-rss{
     display: block;
     fill: #FFFFFF;
 }
 
-.inst-wt svg {width: 19px; height: 19px;}
+.pin-wt svg {width: 19px; height: 19px;}
 .fb-wt svg {width: 14px; height: 19px;}
 .twt-wt svg {width: 23px; height: 19px;}
 .inst-wt svg {width: 19px; height: 19px;}
@@ -1449,55 +1447,7 @@ img.aligncenter { display: block; margin-left: auto; margin-right: auto; }
 .entry-content-single .no-break {
     display:none;
 }
-.st_email_custom {
-    display: inline-block;
-    height: 21px;
-    width: 21px;
-    margin: 0 0 28px 9px;
-    background-image: url("imgs/email-drk.png");
-    background-repeat: no-repeat;
-    background-position:0;
-}
-.st_pinterest_custom {
-    display: inline-block;
-    height: 60px;
-    width: 40px;
-    background-image: url("imgs/sidebar-social-sprite.png");
-    background-repeat: no-repeat;
-    background-position: 1px 1px;
 
-}
-.st_facebook_custom {
-    display: inline-block;
-    height: 60px;
-    width: 40px;
-    background-image: url("imgs/sidebar-social-sprite.png");
-    background-repeat: no-repeat;
-    background-position: -73px 1px;
-
-}
-.st_twitter_custom {
-    display: inline-block;
-    height: 60px;
-    width: 40px;
-    background-image: url("imgs/sidebar-social-sprite.png");
-    background-repeat: no-repeat;
-    background-position: -109px 1px;
-}
-.st_instagram_custom {
-    display: inline-block;
-    height: 60px;
-    width: 40px;
-    background-image: url("imgs/sidebar-social-sprite.png");
-    background-repeat: no-repeat;
-    background-position: -35px 1px;
-}
-.st_email_custom:hover {
-    background-image: url("imgs/email.png");
-}
-.st_facebook_custom:hover, .st_pinterest_custom:hover, .st_twitter_custom:hover, .st_instagram_custom:hover {
-    background-image: url("imgs/sidebar-social-sprite-hov.png");
-}
 .entry-content-single p {
     display: block;
     float: left;
@@ -1509,6 +1459,19 @@ img.aligncenter { display: block; margin-left: auto; margin-right: auto; }
     margin: 0;
     color: #585757;
 }
+.sharing ul {
+    margin: 20px 4px;
+}
+.sharing li {
+    display: inline-block;
+    float: left;
+    text-decoration: none;
+    width: 19px;
+    height: 19px;
+    margin-right: 20px;
+    margin-bottom: 20px ;
+}
+.sharing li.svg-pain g.hv-rss ellipse.drk-svg-rss, .sharing li.svg-pain path.drk-svg-rss {fill:#8d8b8b;}
 p.no-break:first-of-type + p {
     padding: 5px 0 0 0;
 }
@@ -1861,19 +1824,25 @@ span.email-priv strong {
 .side-email li a {
     float: left;
     text-decoration: none;
-    height: 60px;
-    width: 40px;
-    background-image: url("imgs/sidebar-social-sprite.png");
-    background-repeat: no-repeat;
+    height: 19px;
+    width: 19px;
+    margin-right: 20px;
 }
-.side-email li a:hover {
-    background-image: url("imgs/sidebar-social-sprite-hov.png");
+.drk-svg-pin, .drk-svg-fb, .drk-svg-inst, .drk-svg-twt, .drk-svg-rss{
+    display: block;
+    fill: #000;
 }
-.side-pin a {background-position: 1px 1px}
-.side-fb a {background-position: -73px 1px}
-.side-twt a {background-position: -109px 1px}
-.side-inst a {background-position: -35px 1px}
-.side-rss a {background-position: -147px 1px}
+.drk-svg-pin:hover, .drk-svg-fb:hover, .drk-svg-inst:hover, .drk-svg-twt:hover, .drk-svg-pain {
+   fill: #8d8b8b;
+}
+.side-pin svg {width: 19px; height: 19px;}
+.side-fb svg{width: 14px; height: 19px;}
+.side-twt svg {width: 23px; height: 19px;}
+.side-inst svg {width: 19px; height: 19px;}
+.side-rss svg {width: 19px; height: 19px;}
+
+
+.side-rss a.svg-pain g.hv-rss ellipse.drk-svg-rss, .side-rss a.svg-pain path.drk-svg-rss {fill:#8d8b8b;}
 
 .side-recent-post {
     padding-bottom: 20px;

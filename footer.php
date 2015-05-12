@@ -79,15 +79,21 @@
 <?php wp_footer(); ?>
 <script>
     jQuery(function($){
-        var allRss = $('.svg-rss');
-        console.log(allRss);
-        $('.rss-wt').hover(
-        function(){
-            $(this).addClass('svg-pain');
-        },
-        function(){
-            $(this).removeClass('svg-pain');
-        });
+        function svgHover(el){
+            el.hover(
+            function(){
+                $(this).addClass('svg-pain');
+            },
+            function(){
+                $(this).removeClass('svg-pain');
+            });
+        }
+        var svgFt = $('.rss-wt'),
+            svgSd = $('.side-rss a'),
+            svgEm = $('.shr-em');
+        svgHover(svgFt);
+        svgHover(svgSd);
+        svgHover(svgEm);
 
             // initialize Isotope after all images have loaded
             var wWidth   = $(window).width(),
