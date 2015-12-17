@@ -12,7 +12,7 @@
 
         <?php dynamic_sidebar( 'sidebar-1' ); ?>
     <div class="social-feed">
-        <?php echo do_shortcode("[fts twitter twitter_name=@tofurky]"); ?>
+        <?php echo do_shortcode("[fts_twitter twitter_name=@tofurky]"); ?>
     </div>
     <div class="fullline dark-btm"></div>
     <div class="side-email dark-btm">
